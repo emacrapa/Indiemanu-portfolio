@@ -1,0 +1,753 @@
+{
+  "projects": [
+    {
+      "id": "motogp25",
+      "slug": "motogp25",
+      "title": "MotoGP 25",
+      "subtitle": "Milestone S.r.l. — AAA Motorcycle Racing",
+      "category": "shipped",
+      "categoryLabel": "Shipped Game",
+      "year": 2025,
+      "coverImage": "/files/images/Cover/motogp25.png",
+      "heroImage": "/files/images/hero/motogp25.png",
+      "role": "QA Tester, Tech QA Analyst",
+      "duration": "~6 months",
+      "teamSize": "~200+ (full studio)",
+      "engine": "Proprietary",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox Series X/S"
+      ],
+      "tags": [
+        "QA",
+        "AAA",
+        "Racing",
+        "Milestone",
+        "Tech QA"
+      ],
+      "description": "During my second project at Milestone, I was responsible for testing the game's content, whilst also creating new test cases for the team to use, as well as conducting performance and analytics tests. I also developed my skills as a Tech QA Analyst; this project, too, resulted in a submission that passed with flying colours and a successful international launch.",
+      "longDescription": "RIDE 6 is the latest chapter in Milestone's acclaimed motorcycle racing franchise. As a QA Tester and Tech QA Analyst, my work covered functional testing of game content, performance profiling across platforms, and creating structured test cases used by the full QA team. Working at this scale — across PC, PS5, and Xbox — sharpened my ability to identify platform-specific issues, communicate clearly with developers, and meet certification deadlines under pressure.",
+      "links": [
+        {
+          "label": "Steam Page",
+          "url": "https://store.steampowered.com/app/2815070/RIDE_6/",
+          "icon": "steam"
+        }
+      ],
+      "color": "#e8830a",
+      "galleryFolder": "/files/images/gallery/motogp25"
+    },
+    {
+      "id": "ride6",
+      "slug": "ride6",
+      "title": "RIDE 6",
+      "subtitle": "Milestone S.r.l. — AAA Motorcycle Racing",
+      "category": "shipped",
+      "categoryLabel": "Shipped Game",
+      "year": 2026,
+      "coverImage": "/files/images/Cover/ride6.png",
+      "heroImage": "/files/images/hero/ride6.png",
+      "role": "QA Tester, Tech QA Analyst",
+      "duration": "~6 months",
+      "teamSize": "~200+ (full studio)",
+      "engine": "Proprietary",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox Series X/S"
+      ],
+      "tags": [
+        "QA",
+        "AAA",
+        "Racing",
+        "Milestone",
+        "Tech QA"
+      ],
+      "description": "During my second project at Milestone, I was responsible for testing the game's content, whilst also creating new test cases for the team to use, as well as conducting performance and analytics tests. I also developed my skills as a Tech QA Analyst; this project, too, resulted in a submission that passed with flying colours and a successful international launch.",
+      "longDescription": "RIDE 6 is the latest chapter in Milestone's acclaimed motorcycle racing franchise. As a QA Tester and Tech QA Analyst, my work covered functional testing of game content, performance profiling across platforms, and creating structured test cases used by the full QA team. Working at this scale — across PC, PS5, and Xbox — sharpened my ability to identify platform-specific issues, communicate clearly with developers, and meet certification deadlines under pressure.",
+      "links": [
+        {
+          "label": "Steam Page",
+          "url": "https://store.steampowered.com/app/2815070/RIDE_6/",
+          "icon": "steam"
+        }
+      ],
+      "color": "#e8830a",
+      "galleryFolder": "/files/images/gallery/ride6"
+    },
+    {
+      "id": "ogu-and-the-secret-forest",
+      "slug": "ogu-and-the-secret-forest",
+      "title": "Ogu and the Secret Forest",
+      "subtitle": "Milestone S.r.l. — AAA Motorcycle Racing",
+      "category": "shipped",
+      "categoryLabel": "Shipped Game",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/ogu-and-the-secret-forest.png",
+      "heroImage": "/files/images/hero/ogu-and-the-secret-forest.png",
+      "role": "QA Tester, Tech QA Analyst",
+      "duration": "~6 months",
+      "teamSize": "~200+ (full studio)",
+      "engine": "Proprietary",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox Series X/S"
+      ],
+      "tags": [
+        "QA",
+        "AAA",
+        "Racing",
+        "Milestone",
+        "Tech QA"
+      ],
+      "description": "During my second project at Milestone, I was responsible for testing the game's content, whilst also creating new test cases for the team to use, as well as conducting performance and analytics tests. I also developed my skills as a Tech QA Analyst; this project, too, resulted in a submission that passed with flying colours and a successful international launch.",
+      "longDescription": "RIDE 6 is the latest chapter in Milestone's acclaimed motorcycle racing franchise. As a QA Tester and Tech QA Analyst, my work covered functional testing of game content, performance profiling across platforms, and creating structured test cases used by the full QA team. Working at this scale — across PC, PS5, and Xbox — sharpened my ability to identify platform-specific issues, communicate clearly with developers, and meet certification deadlines under pressure.",
+      "links": [
+        {
+          "label": "Steam Page",
+          "url": "https://store.steampowered.com/app/2815070/RIDE_6/",
+          "icon": "steam"
+        }
+      ],
+      "color": "#e8830a",
+      "galleryFolder": "/files/images/gallery/ogu-and-the-secret-forest"
+    },
+    {
+      "id": "narcisos-dream",
+      "slug": "narcisos-dream",
+      "title": "Narciso's Dream",
+      "subtitle": "Event Horizon School — GameLab 1",
+      "category": "gamelab",
+      "categoryLabel": "Game Lab",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/narcisos-dream.png",
+      "heroImage": "/files/images/hero/narcisos-dream.png",
+      "role": "Game Designer & Project Manager",
+      "duration": "2 weeks",
+      "teamSize": "17 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Design",
+        "Project Management",
+        "Top-Down",
+        "Arena",
+        "Unity"
+      ],
+      "description": "In this first completely free-themed GameLab, we tried to develop a Top-Down Arena featuring dynamic combat and a dreamlike setting, with the assets changing from a dream version to a nightmare version as the game progresses and the player takes damage. Will you manage not to get trapped in the nightmare?",
+      "longDescription": "Narciso's Dream was the first GameLab project at Event Horizon School — a two-week sprint with no fixed theme, giving our 17-person team full creative freedom. I took on the dual role of Game Designer and Project Manager, defining the core loop of a Top-Down Arena where the visual aesthetic shifts dynamically between a dreamy, peaceful state and a dark nightmare as the player takes damage. Managing a team of this size under tight deadlines taught me how to balance creative ambition with pragmatic scoping.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        }
+      ],
+      "color": "#6b3fa0",
+      "galleryFolder": "/files/images/gallery/narcisos-dream"
+    },
+    {
+      "id": "dwarfkeeper",
+      "slug": "dwarfkeeper",
+      "title": "Dwarf Keeper",
+      "subtitle": "Event Horizon School — GameLab 2",
+      "category": "gamelab",
+      "categoryLabel": "Game Lab",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/dwarfkeeper.png",
+      "heroImage": "/files/images/hero/dwarfkeeper.png",
+      "role": "QA Tester",
+      "duration": "~4 months",
+      "teamSize": "~100+",
+      "engine": "Proprietary",
+      "platform": [
+        "PC",
+        "Console"
+      ],
+      "tags": [
+        "QA",
+        "Milestone",
+        "Testing"
+      ],
+      "description": "My first project at Milestone as a QA Tester. I contributed to functional testing and quality assurance, helping the title reach certification successfully.",
+      "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
+      "links": [],
+      "color": "#7b5ea7",
+      "galleryFolder": "/files/images/gallery/dwarfkeeper"
+    },
+    {
+      "id": "karen-jaeger",
+      "slug": "karen-jaeger",
+      "title": "Karen Jaeger",
+      "subtitle": "Event Horizon School — GameLab 3",
+      "category": "gamelab",
+      "categoryLabel": "Game Lab",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/karen-jaeger.png",
+      "heroImage": "/files/images/hero/karen-jaeger.png",
+      "role": "Game Designer & Project Manager",
+      "duration": "2 weeks",
+      "teamSize": "17 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Design",
+        "Project Management",
+        "Top-Down",
+        "Arena",
+        "Unity"
+      ],
+      "description": "In this first completely free-themed GameLab, we tried to develop a Top-Down Arena featuring dynamic combat and a dreamlike setting, with the assets changing from a dream version to a nightmare version as the game progresses and the player takes damage. Will you manage not to get trapped in the nightmare?",
+      "longDescription": "Narciso's Dream was the first GameLab project at Event Horizon School — a two-week sprint with no fixed theme, giving our 17-person team full creative freedom. I took on the dual role of Game Designer and Project Manager, defining the core loop of a Top-Down Arena where the visual aesthetic shifts dynamically between a dreamy, peaceful state and a dark nightmare as the player takes damage. Managing a team of this size under tight deadlines taught me how to balance creative ambition with pragmatic scoping.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        }
+      ],
+      "color": "#6b3fa0",
+      "galleryFolder": "/files/images/gallery/karen-jaeger"
+    },
+    {
+      "id": "snag-a-bug",
+      "slug": "snag-a-bug",
+      "title": "Snag a Bug",
+      "subtitle": "Event Horizon School — GameLab 4",
+      "category": "gamelab",
+      "categoryLabel": "Game Lab",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/snag-a-bug.png",
+      "heroImage": "/files/images/hero/snag-a-bug.png",
+      "role": "Game Designer & Project Manager",
+      "duration": "2 weeks",
+      "teamSize": "17 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Design",
+        "Project Management",
+        "Top-Down",
+        "Arena",
+        "Unity"
+      ],
+      "description": "In this first completely free-themed GameLab, we tried to develop a Top-Down Arena featuring dynamic combat and a dreamlike setting, with the assets changing from a dream version to a nightmare version as the game progresses and the player takes damage. Will you manage not to get trapped in the nightmare?",
+      "longDescription": "Narciso's Dream was the first GameLab project at Event Horizon School — a two-week sprint with no fixed theme, giving our 17-person team full creative freedom. I took on the dual role of Game Designer and Project Manager, defining the core loop of a Top-Down Arena where the visual aesthetic shifts dynamically between a dreamy, peaceful state and a dark nightmare as the player takes damage. Managing a team of this size under tight deadlines taught me how to balance creative ambition with pragmatic scoping.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        }
+      ],
+      "color": "#6b3fa0",
+      "galleryFolder": "/files/images/gallery/snag-a-bug"
+    },
+    {
+      "id": "hover-2024",
+      "slug": "hover-remake",
+      "title": "Hover Remake",
+      "subtitle": "Event Horizon School — Remakes",
+      "category": "remake",
+      "categoryLabel": "Remake",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/hover-remake.png",
+      "heroImage": "/files/images/hero/hover-remake.png",
+      "role": "Game Designer & Project Manager",
+      "duration": "3 weeks",
+      "teamSize": "18 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Design",
+        "Project Management",
+        "Remake",
+        "Classic",
+        "Unity"
+      ],
+      "description": "This remake of Hover was the first team project done at Event Horizon School during January 2024. The remake is a faithful reproduction of the famous 1995 game, in a revamped graphic design. Capture all the blue flags before the enemies manage to capture the red ones!",
+      "longDescription": "The Hover Remake was my team's first project at Event Horizon School — a faithful reimagining of the classic 1995 Windows game, rebuilt in Unity with a fresh visual identity. Over three weeks with an 18-member team, I coordinated game design decisions and production flow, ensuring we preserved what made the original charming while modernising the look and feel. This project laid the foundation for how I approach team leadership in game development.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1B7jhREmzQqDypbWKxoM6xGjzRn5i45iv",
+          "icon": "download"
+        }
+      ],
+      "color": "#0a84e8",
+      "galleryFolder": "/files/images/gallery/hover-remake"
+    },
+    {
+      "id": "berty-road",
+      "slug": "berty-road",
+      "title": "Berty Road",
+      "subtitle": "Event Horizon School — Remakes",
+      "category": "remake",
+      "categoryLabel": "Remake",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/berty-road.png",
+      "heroImage": "/files/images/hero/berty-road.png",
+      "role": "Game Designer & Project Manager",
+      "duration": "3 weeks",
+      "teamSize": "18 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Design",
+        "Project Management",
+        "Remake",
+        "Classic",
+        "Unity"
+      ],
+      "description": "This remake of Hover was the first team project done at Event Horizon School during January 2024. The remake is a faithful reproduction of the famous 1995 game, in a revamped graphic design. Capture all the blue flags before the enemies manage to capture the red ones!",
+      "longDescription": "The Hover Remake was my team's first project at Event Horizon School — a faithful reimagining of the classic 1995 Windows game, rebuilt in Unity with a fresh visual identity. Over three weeks with an 18-member team, I coordinated game design decisions and production flow, ensuring we preserved what made the original charming while modernising the look and feel. This project laid the foundation for how I approach team leadership in game development.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1B7jhREmzQqDypbWKxoM6xGjzRn5i45iv",
+          "icon": "download"
+        }
+      ],
+      "color": "#0a84e8",
+      "galleryFolder": "/files/images/gallery/berty-road"
+    },
+    {
+      "id": "descent-remake",
+      "slug": "descent-remake",
+      "title": "Descent Remake",
+      "subtitle": "Event Horizon School — Remakes",
+      "category": "remake",
+      "categoryLabel": "Remake",
+      "year": 2024,
+      "coverImage": "/files/images/Cover/descent-remake.png",
+      "heroImage": "/files/images/hero/descent-remake.png",
+      "role": "Game Designer & Project Manager",
+      "duration": "3 weeks",
+      "teamSize": "18 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Design",
+        "Project Management",
+        "Remake",
+        "Classic",
+        "Unity"
+      ],
+      "description": "This remake of Hover was the first team project done at Event Horizon School during January 2024. The remake is a faithful reproduction of the famous 1995 game, in a revamped graphic design. Capture all the blue flags before the enemies manage to capture the red ones!",
+      "longDescription": "The Hover Remake was my team's first project at Event Horizon School — a faithful reimagining of the classic 1995 Windows game, rebuilt in Unity with a fresh visual identity. Over three weeks with an 18-member team, I coordinated game design decisions and production flow, ensuring we preserved what made the original charming while modernising the look and feel. This project laid the foundation for how I approach team leadership in game development.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1B7jhREmzQqDypbWKxoM6xGjzRn5i45iv",
+          "icon": "download"
+        }
+      ],
+      "color": "#0a84e8",
+      "galleryFolder": "/files/images/gallery/descent-remake"
+    },
+    {
+      "id": "seedious-sam-xd",
+      "slug": "seedious-sam-xd",
+      "title": "Seedious Sam XD: The Last Farmer",
+      "subtitle": "Global Game Jam 2023 — Milan",
+      "category": "gamejam",
+      "categoryLabel": "Game Jam",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/seedious-sam-xd.png",
+      "heroImage": "/files/images/hero/seedious-sam-xd.png",
+      "role": "Game Designer & Team Lead",
+      "duration": "48 hours",
+      "teamSize": "7 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Jam",
+        "GGJ",
+        "Local Multiplayer",
+        "Party Game",
+        "Unity"
+      ],
+      "description": "Developed during the Global Game Jam 2023, from the theme \"Roots\", in this chaotic local 1v1 party game two players will compete over a land overrun by roots using genetically modified plants as weapons. Which of the two will prevail?",
+      "longDescription": "48 hours, 7 people, one theme: \"Roots\". Seedious Sam XD: The Last Farmer is the chaotic local 1v1 party game that came out of Global Game Jam 2023 in Milan. As Game Designer and Team Lead, I pitched the concept, delegated tasks, and kept the team focused through an intense weekend of development. The result: a frenetic plant-based battle game where two players weaponise genetically modified crops in a last-farmer-standing showdown.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=14rN8yp8Zarhhx8BmLh2pe6bNYbYBddXE",
+          "icon": "download"
+        },
+        {
+          "label": "itch.io Page",
+          "url": "https://liberiarcano.itch.io/seedious-sam-xd-the-last-farmer",
+          "icon": "itch"
+        }
+      ],
+      "color": "#2ea84a",
+      "galleryFolder": "/files/images/gallery/seedious-sam-xd"
+    },
+    {
+      "id": "lay-down-comedy",
+      "slug": "lay-down-comedy",
+      "title": "Lay Down Comedy",
+      "subtitle": "Global Game Jam 2024 — Turin",
+      "category": "gamejam",
+      "categoryLabel": "Game Jam",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/lay-down-comedy.png",
+      "heroImage": "/files/images/hero/lay-down-comedy.png",
+      "role": "Game Designer & Team Lead",
+      "duration": "48 hours",
+      "teamSize": "7 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Jam",
+        "GGJ",
+        "Local Multiplayer",
+        "Party Game",
+        "Unity"
+      ],
+      "description": "Developed during the Global Game Jam 2023, from the theme \"Roots\", in this chaotic local 1v1 party game two players will compete over a land overrun by roots using genetically modified plants as weapons. Which of the two will prevail?",
+      "longDescription": "48 hours, 7 people, one theme: \"Roots\". Seedious Sam XD: The Last Farmer is the chaotic local 1v1 party game that came out of Global Game Jam 2023 in Milan. As Game Designer and Team Lead, I pitched the concept, delegated tasks, and kept the team focused through an intense weekend of development. The result: a frenetic plant-based battle game where two players weaponise genetically modified crops in a last-farmer-standing showdown.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=14rN8yp8Zarhhx8BmLh2pe6bNYbYBddXE",
+          "icon": "download"
+        },
+        {
+          "label": "itch.io Page",
+          "url": "https://liberiarcano.itch.io/seedious-sam-xd-the-last-farmer",
+          "icon": "itch"
+        }
+      ],
+      "color": "#2ea84a",
+      "galleryFolder": "/files/images/gallery/lay-down-comedy"
+    },
+    {
+      "id": "hellivery",
+      "slug": "hellivery",
+      "title": "Hellivery",
+      "subtitle": "GMTK 2025 — Milan",
+      "category": "gamejam",
+      "categoryLabel": "Game Jam",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/hellivery.png",
+      "heroImage": "/files/images/hero/hellivery.png",
+      "role": "Game Designer & Team Lead",
+      "duration": "48 hours",
+      "teamSize": "7 members",
+      "engine": "Unity",
+      "platform": [
+        "PC"
+      ],
+      "tags": [
+        "Game Jam",
+        "GGJ",
+        "Local Multiplayer",
+        "Party Game",
+        "Unity"
+      ],
+      "description": "Developed during the Global Game Jam 2023, from the theme \"Roots\", in this chaotic local 1v1 party game two players will compete over a land overrun by roots using genetically modified plants as weapons. Which of the two will prevail?",
+      "longDescription": "48 hours, 7 people, one theme: \"Roots\". Seedious Sam XD: The Last Farmer is the chaotic local 1v1 party game that came out of Global Game Jam 2023 in Milan. As Game Designer and Team Lead, I pitched the concept, delegated tasks, and kept the team focused through an intense weekend of development. The result: a frenetic plant-based battle game where two players weaponise genetically modified crops in a last-farmer-standing showdown.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=14rN8yp8Zarhhx8BmLh2pe6bNYbYBddXE",
+          "icon": "download"
+        },
+        {
+          "label": "itch.io Page",
+          "url": "https://liberiarcano.itch.io/seedious-sam-xd-the-last-farmer",
+          "icon": "itch"
+        }
+      ],
+      "color": "#2ea84a",
+      "galleryFolder": "/files/images/gallery/hellivery"
+    },
+    {
+      "id": "totally-inaccurate-solar-system-simulator",
+      "slug": "totally-inaccurate-solar-system-simulator",
+      "title": "Totally Inaccurate Solar System Simulator",
+      "subtitle": "Coursera — Michigan State University",
+      "category": "coursera",
+      "categoryLabel": "Coursera Project",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/totally-inaccurate-solar-system-simulator.png",
+      "heroImage": "/files/images/hero/totally-inaccurate-solar-system-simulator.png",
+      "role": "Game Designer & Developer",
+      "duration": "2 weeks",
+      "teamSize": "Solo",
+      "engine": "Unity",
+      "platform": [
+        "PC",
+        "WebGL"
+      ],
+      "tags": [
+        "Solo",
+        "Platformer",
+        "Unity",
+        "Coursera",
+        "MSU"
+      ],
+      "description": "In this platformer, created solo during my first approach to development on Unity, you take on the role of an explorer who must enter the realm of Ekrund, an ancient dwarven settlement abandoned after a mysterious event. Traverse the first three levels and immerse yourself in the exploration of the ruins of an ancient civilization.",
+      "longDescription": "Tales of Ekrund was my first solo Unity project, built as part of Michigan State University's Game Design and Development Specialization on Coursera. Over two weeks, I designed and built a 3-level 2D platformer completely from scratch — handling level design, scripting, and UI. The game follows an explorer delving into Ekrund, a dwarven ruin shrouded in mystery. This project was my real introduction to Unity's workflow and the challenges of solo game development.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Gm7BRJHnxvytJxHiXuBH9_joVUZjAFcT",
+          "icon": "download"
+        },
+        {
+          "label": "itch.io Page",
+          "url": "https://indiemanu.itch.io/tales-of-ekrund",
+          "icon": "itch"
+        }
+      ],
+      "color": "#c8860a",
+      "galleryFolder": "/files/images/gallery/totally-inaccurate-solar-system-simulator"
+    },
+    {
+      "id": "proxima-the-last-stand",
+      "slug": "proxima-the-last-stand",
+      "title": "Proxima The Last Stand",
+      "subtitle": "Coursera — Michigan State University",
+      "category": "coursera",
+      "categoryLabel": "Coursera Project",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/proxima-the-last-stand.png",
+      "heroImage": "/files/images/hero/proxima-the-last-stand.png",
+      "role": "Game Designer & Developer",
+      "duration": "2 weeks",
+      "teamSize": "Solo",
+      "engine": "Unity",
+      "platform": [
+        "PC",
+        "WebGL"
+      ],
+      "tags": [
+        "Solo",
+        "Platformer",
+        "Unity",
+        "Coursera",
+        "MSU"
+      ],
+      "description": "In this platformer, created solo during my first approach to development on Unity, you take on the role of an explorer who must enter the realm of Ekrund, an ancient dwarven settlement abandoned after a mysterious event. Traverse the first three levels and immerse yourself in the exploration of the ruins of an ancient civilization.",
+      "longDescription": "Tales of Ekrund was my first solo Unity project, built as part of Michigan State University's Game Design and Development Specialization on Coursera. Over two weeks, I designed and built a 3-level 2D platformer completely from scratch — handling level design, scripting, and UI. The game follows an explorer delving into Ekrund, a dwarven ruin shrouded in mystery. This project was my real introduction to Unity's workflow and the challenges of solo game development.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Gm7BRJHnxvytJxHiXuBH9_joVUZjAFcT",
+          "icon": "download"
+        },
+        {
+          "label": "itch.io Page",
+          "url": "https://indiemanu.itch.io/tales-of-ekrund",
+          "icon": "itch"
+        }
+      ],
+      "color": "#c8860a",
+      "galleryFolder": "/files/images/gallery/proxima-the-last-stand"
+    },
+    {
+      "id": "tales-of-ekrund",
+      "slug": "tales-of-ekrund",
+      "title": "Tales of Ekrund",
+      "subtitle": "Coursera — Michigan State University",
+      "category": "coursera",
+      "categoryLabel": "Coursera Project",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/tales-of-ekrund.png",
+      "heroImage": "/files/images/hero/tales-of-ekrund.png",
+      "role": "Game Designer & Developer",
+      "duration": "2 weeks",
+      "teamSize": "Solo",
+      "engine": "Unity",
+      "platform": [
+        "PC",
+        "WebGL"
+      ],
+      "tags": [
+        "Solo",
+        "Platformer",
+        "Unity",
+        "Coursera",
+        "MSU"
+      ],
+      "description": "In this platformer, created solo during my first approach to development on Unity, you take on the role of an explorer who must enter the realm of Ekrund, an ancient dwarven settlement abandoned after a mysterious event. Traverse the first three levels and immerse yourself in the exploration of the ruins of an ancient civilization.",
+      "longDescription": "Tales of Ekrund was my first solo Unity project, built as part of Michigan State University's Game Design and Development Specialization on Coursera. Over two weeks, I designed and built a 3-level 2D platformer completely from scratch — handling level design, scripting, and UI. The game follows an explorer delving into Ekrund, a dwarven ruin shrouded in mystery. This project was my real introduction to Unity's workflow and the challenges of solo game development.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Gm7BRJHnxvytJxHiXuBH9_joVUZjAFcT",
+          "icon": "download"
+        },
+        {
+          "label": "itch.io Page",
+          "url": "https://indiemanu.itch.io/tales-of-ekrund",
+          "icon": "itch"
+        }
+      ],
+      "color": "#c8860a",
+      "galleryFolder": "/files/images/gallery/tales-of-ekrund"
+    },
+    {
+      "id": "athena",
+      "slug": "athena",
+      "title": "Athena",
+      "subtitle": "University of Milan — Online Game Design",
+      "category": "other",
+      "categoryLabel": "University Project",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/athena.png",
+      "heroImage": "/files/images/hero/athena.png",
+      "role": "Game Designer & Developer",
+      "duration": "2 weeks",
+      "teamSize": "10 members",
+      "engine": "Unity",
+      "platform": [
+        "PC",
+        "Online Multiplayer"
+      ],
+      "tags": [
+        "Online Multiplayer",
+        "Puzzle Platformer",
+        "University",
+        "Unity",
+        "Co-op"
+      ],
+      "description": "In this game, created during the Online Game Design course at the Milan University, you can play online with two friends and, choosing different classes, tackle a puzzle platform level together trying to reach Athena, an evil artificial intelligence that has taken control of the university. Will you be able to defeat her by helping each other?",
+      "longDescription": "Athena was developed during the Online Game Design course at the University of Milan, themed around the institution's centenary. Ten of us built an online co-op puzzle platformer where three players select different ability classes and collaborate to defeat Athena — an AI villain who has seized control of the university. The project was a deep dive into multiplayer architecture in Unity and the design challenges of building mechanics that require genuine cooperation.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1e4iPAeZei9PQYY4BgkMDieROjdmv6hDI",
+          "icon": "download"
+        }
+      ],
+      "color": "#e83838",
+      "galleryFolder": "/files/images/gallery/athena"
+    },
+    {
+      "id": "the-hike",
+      "slug": "the-hike",
+      "title": "The Hike",
+      "subtitle": "University of Milan — Online Game Design",
+      "category": "other",
+      "categoryLabel": "University Project",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/the-hike.png",
+      "heroImage": "/files/images/hero/the-hike.png",
+      "role": "Game Designer & Developer",
+      "duration": "2 weeks",
+      "teamSize": "10 members",
+      "engine": "Unity",
+      "platform": [
+        "PC",
+        "Online Multiplayer"
+      ],
+      "tags": [
+        "Online Multiplayer",
+        "Puzzle Platformer",
+        "University",
+        "Unity",
+        "Co-op"
+      ],
+      "description": "In this game, created during the Online Game Design course at the Milan University, you can play online with two friends and, choosing different classes, tackle a puzzle platform level together trying to reach Athena, an evil artificial intelligence that has taken control of the university. Will you be able to defeat her by helping each other?",
+      "longDescription": "Athena was developed during the Online Game Design course at the University of Milan, themed around the institution's centenary. Ten of us built an online co-op puzzle platformer where three players select different ability classes and collaborate to defeat Athena — an AI villain who has seized control of the university. The project was a deep dive into multiplayer architecture in Unity and the design challenges of building mechanics that require genuine cooperation.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1e4iPAeZei9PQYY4BgkMDieROjdmv6hDI",
+          "icon": "download"
+        }
+      ],
+      "color": "#e83838",
+      "galleryFolder": "/files/images/gallery/the-hike"
+    },
+    {
+      "id": "waters-grave",
+      "slug": "waters-grave",
+      "title": "Water's Grave",
+      "subtitle": "University of Milan — Online Game Design",
+      "category": "other",
+      "categoryLabel": "University Project",
+      "year": 2023,
+      "coverImage": "/files/images/Cover/waters-grave.png",
+      "heroImage": "/files/images/hero/waters-grave.png",
+      "role": "Game Designer & Developer",
+      "duration": "2 weeks",
+      "teamSize": "10 members",
+      "engine": "Unity",
+      "platform": [
+        "PC",
+        "Online Multiplayer"
+      ],
+      "tags": [
+        "Online Multiplayer",
+        "Puzzle Platformer",
+        "University",
+        "Unity",
+        "Co-op"
+      ],
+      "description": "In this game, created during the Online Game Design course at the Milan University, you can play online with two friends and, choosing different classes, tackle a puzzle platform level together trying to reach Athena, an evil artificial intelligence that has taken control of the university. Will you be able to defeat her by helping each other?",
+      "longDescription": "Athena was developed during the Online Game Design course at the University of Milan, themed around the institution's centenary. Ten of us built an online co-op puzzle platformer where three players select different ability classes and collaborate to defeat Athena — an AI villain who has seized control of the university. The project was a deep dive into multiplayer architecture in Unity and the design challenges of building mechanics that require genuine cooperation.",
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1e4iPAeZei9PQYY4BgkMDieROjdmv6hDI",
+          "icon": "download"
+        }
+      ],
+      "color": "#e83838",
+      "galleryFolder": "/files/images/gallery/waters-grave"
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "All Projects"
+    },
+    {
+      "id": "shipped",
+      "label": "Shipped Games"
+    },
+    {
+      "id": "gamelab",
+      "label": "Game Labs"
+    },
+    {
+      "id": "remake",
+      "label": "Remakes"
+    },
+    {
+      "id": "gamejam",
+      "label": "Game Jams"
+    },
+    {
+      "id": "coursera",
+      "label": "Coursera"
+    },
+    {
+      "id": "other",
+      "label": "More Projects"
+    }
+  ]
+}

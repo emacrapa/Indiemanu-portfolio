@@ -1,0 +1,156 @@
+{
+  "homeExperience": [
+    {
+      "year": "2023 – PRESENT",
+      "role": "QA Tester & Tech QA Analyst",
+      "org": "Milestone S.r.l. · Milan, Italy"
+    },
+    {
+      "year": "2023 – 2025",
+      "role": "Game Design Specialization",
+      "org": "Event Horizon School · Milan"
+    },
+    {
+      "year": "2022 – 2023",
+      "role": "Game Design & Development",
+      "org": "Coursera · Michigan State University"
+    }
+  ],
+
+  "homeSkills": [
+    { "icon": "🎮", "name": "Game Design",    "lvl": "EXPERT" },
+    { "icon": "🔍", "name": "QA Testing",     "lvl": "EXPERT" },
+    { "icon": "📋", "name": "Project Mgmt",   "lvl": "ADV"    },
+    { "icon": "🎲", "name": "Unity",           "lvl": "ADV"    },
+    { "icon": "💻", "name": "C#",              "lvl": "MID"    },
+    { "icon": "🌐", "name": "Online Design",  "lvl": "ADV"    },
+    { "icon": "🔧", "name": "Tech QA",        "lvl": "ADV"    },
+    { "icon": "🤝", "name": "Team Lead",      "lvl": "ADV"    },
+    { "icon": "📝", "name": "Level Design",   "lvl": "ADV"    },
+    { "icon": "🎭", "name": "Narrative Des.", "lvl": "MID"    },
+    { "icon": "📊", "name": "Metrics & KPI",  "lvl": "MID"    },
+    { "icon": "🗺️", "name": "Jira / Zephyr",  "lvl": "ADV"    }
+  ],
+
+  "aboutWork": [
+    {
+      "year": "2023 – PRESENT",
+      "role": "QA Tester & Tech QA Analyst",
+      "org": "Milestone S.r.l. · Milan, Italy",
+      "desc": "Working on AAA motorcycle racing titles (RIDE series). Responsible for functional testing, performance testing, writing test cases, and ensuring certification passes. Developed skills as Tech QA Analyst handling analytics and platform-specific testing."
+    }
+  ],
+
+  "aboutEducation": [
+    {
+      "year": "2023 – 2025",
+      "role": "Game Design Specialization",
+      "org": "Event Horizon School · Milan, Italy",
+      "desc": "Intensive two-year program covering game design theory, production pipelines, team development, and practical GameLab projects with teams of 14–18 people."
+    },
+    {
+      "year": "2022 – 2023",
+      "role": "Game Design & Development Specialization",
+      "org": "Coursera · Michigan State University",
+      "desc": "Online certification covering game design fundamentals and Unity development, resulting in three shipped prototype projects."
+    },
+    {
+      "year": "2019 – 2023",
+      "role": "B.Sc. Computer Science",
+      "org": "University of Milan · Milan, Italy",
+      "desc": "Bachelor's degree in Computer Science. Includes the Online Game Design project (Athena), developed as part of a dedicated games course."
+    }
+  ],
+
+  "aboutSkillBars": [
+    { "name": "Game Design",       "pct": 90  },
+    { "name": "QA Testing",        "pct": 95  },
+    { "name": "Project Management","pct": 80  },
+    { "name": "Unity / C#",        "pct": 70  },
+    { "name": "Level Design",      "pct": 75  },
+    { "name": "Team Leadership",   "pct": 85  }
+  ],
+
+  "aboutTools": [
+    "Unity","Jira","Zephyr","TestRail","C#","Git / GitHub",
+    "Miro","Figma","Google Docs","Notion","Perforce","Discord"
+  ],
+
+  "aboutLanguages": [
+    { "name": "Italian", "label": "NATIVE", "pct": 100 },
+    { "name": "English", "label": "C1",     "pct": 85  }
+  ],
+
+  "contacts": [
+    {
+      "icon": "📧",
+      "platform": "EMAIL",
+      "handle": "emanuele.crapanzano02@gmail.com",
+      "desc": "Best for professional enquiries & opportunities",
+      "href": "mailto:emanuele.crapanzano02@gmail.com",
+      "arrow": "→"
+    },
+    {
+      "icon": "💼",
+      "platform": "LINKEDIN",
+      "handle": "Emanuele Crapanzano",
+      "desc": "CV, work history, professional network",
+      "href": "https://www.linkedin.com/in/emanuele-crapanzano-2603a8265/",
+      "arrow": "→",
+      "external": true
+    },
+    {
+      "icon": "🕹️",
+      "platform": "ITCH.IO",
+      "handle": "indiemanu",
+      "desc": "Play my published indie projects",
+      "href": "https://indiemanu.itch.io/",
+      "arrow": "→",
+      "external": true
+    },
+    {
+      "icon": "💻",
+      "platform": "GITHUB",
+      "handle": "emacrapa",
+      "desc": "Code, experiments & side projects",
+      "href": "https://github.com/emacrapa",
+      "arrow": "→",
+      "external": true
+    },
+    {
+      "icon": "🎮",
+      "platform": "DISCORD",
+      "handle": "_scrappyy",
+      "desc": "For quick chats and game dev talk",
+      "arrow": "click to copy →",
+      "copyValue": "_scrappyy",
+      "copyToast": "// DISCORD TAG COPIED!"
+    },
+    {
+      "icon": "💰",
+      "platform": "FIVERR",
+      "handle": "emanuele_crapa",
+      "desc": "Freelance game design & QA services",
+      "href": "https://www.fiverr.com/emanuele_crapa",
+      "arrow": "→",
+      "external": true
+    },
+    {
+      "icon": "📸",
+      "platform": "INSTAGRAM",
+      "handle": "ema.scrappy",
+      "desc": "Personal stuff & gamedev behind the scenes",
+      "href": "https://www.instagram.com/ema.scrappy/",
+      "arrow": "→",
+      "external": true
+    },
+    {
+      "icon": "📞",
+      "platform": "PHONE",
+      "handle": "+39 347 833 2527",
+      "desc": "Italian hours, don't be shy",
+      "arrow": "📍 Milan, IT",
+      "static": true
+    }
+  ]
+}
