@@ -12,12 +12,17 @@ let currentProjectIndex = 0;
 let carouselIndex = 0;
 let galleryIndex = 0;
 
+// Lightbox state
+let lightboxImages = [];
+let lightboxCurrentIndex = 0;
+
 // ── Init ──
 async function init() {
   await Promise.all([loadProjects(), loadContent()]);
   initCursor();
   initNav();
   initMobileNav();
+  initLightboxKeyboard();
   initToast();
   initMinigame();
   initScrollEffects();
@@ -55,7 +60,8 @@ function router() {
   const hash = window.location.hash || '#home';
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-
+  resetTheme();
+  
   if (hash === '#home' || hash === '') {
     showPage('page-home');
     document.querySelector('[href="#home"]')?.classList.add('active');
@@ -113,78 +119,224 @@ function renderHeroParticles() {
 
 // ── Carousel ──
 function renderCarousel() {
-  const track = document.getElementById('carousel-track');
-  const dotsContainer = document.getElementById('carousel-dots');
-  if (!track) return;
 
-  track.innerHTML = PROJECTS.map(p => `
-    <div class="project-card" onclick="navigate('project/${p.slug}')" role="button" tabindex="0">
-      <div style="overflow:hidden;aspect-ratio:16/9">
-        <img class="project-card-thumb" src="${p.coverImage}" alt="${p.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/640x360/1e1e26/7a7a8c?text=${encodeURIComponent(p.title)}'">
-      </div>
-      <div class="project-card-overlay">
-        <div class="project-card-play">VIEW PROJECT</div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-card-cat">${p.categoryLabel}</div>
-        <div class="project-card-title">${p.title}</div>
-        <div class="project-card-role">${p.role}</div>
-        <div class="project-card-meta">
-          <span>📅 ${p.year}</span>
-          <span>👥 ${p.teamSize}</span>
-          <span>⏱ ${p.duration}</span>
+    const track = document.getElementById("carousel-track");
+    const dotsContainer = document.getElementById("carousel-dots");
+
+    if (!track) return;
+
+    const visibleCount =
+        window.innerWidth < 700 ? 1 :
+        window.innerWidth < 1100 ? 2 : 3;
+
+    const cards = PROJECTS.map(p => `
+        <div class="project-card" onclick="navigate('project/${p.slug}')" role="button" tabindex="0">
+            <div style="overflow:hidden;aspect-ratio:16/9">
+                <img class="project-card-thumb"
+                    src="${p.coverImage}"
+                    alt="${p.title}"
+                    loading="lazy">
+            </div>
+
+            <div class="project-card-overlay">
+                <div class="project-card-play">
+                    VIEW PROJECT
+                </div>
+            </div>
+
+            <div class="project-card-body">
+                <div class="project-card-cat">${p.categoryLabel}</div>
+                <div class="project-card-title">${p.title}</div>
+                <div class="project-card-role">${p.role}</div>
+
+                <div class="project-card-meta">
+                    <span>📅 ${p.year}</span>
+                    <span>👥 ${p.teamSize}</span>
+                    <span>⏱ ${p.duration}</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  `).join('');
+    `);
 
-  // dots
-  if (dotsContainer) {
-    dotsContainer.innerHTML = PROJECTS.map((_, i) =>
-      `<div class="carousel-dot ${i===0?'active':''}" onclick="goToSlide(${i})"></div>`
-    ).join('');
-  }
+    track.innerHTML =
+        track.innerHTML =
+    cards.slice(-visibleCount)
+        .map(c => c.replace(
+            'project-card"',
+            'project-card carousel-clone"'
+        ))
+        .join("") +
 
-  startCarouselAuto();
+    cards.join("") +
+
+    cards.slice(0, visibleCount)
+        .map(c => c.replace(
+            'project-card"',
+            'project-card carousel-clone"'
+        ))
+        .join("");
+
+    carouselIndex = visibleCount;
+
+    requestAnimationFrame(() => {
+
+        const firstCard = track.querySelector(".project-card");
+        if (!firstCard) return;
+
+        const cardW = firstCard.offsetWidth + 24;
+
+        track.style.transition = "none";
+        track.style.transform =
+            `translateX(-${carouselIndex * cardW}px)`;
+
+        // forza il browser a completare layout + paint
+        void track.offsetHeight;
+
+        requestAnimationFrame(() => {
+            track.style.transition = "transform .45s ease";
+        });
+
+    });
+
+    if (dotsContainer) {
+
+        dotsContainer.innerHTML =
+            PROJECTS.map((_, i) =>
+                `<div class="carousel-dot ${i===0?"active":""}" onclick="goToSlide(${i})"></div>`
+            ).join("");
+
+    }
+
+    startCarouselAuto();
+
 }
 
 let carouselTimer = null;
+const CAROUSEL_DELAY = 4000;
+
 function startCarouselAuto() {
-  clearInterval(carouselTimer);
-  carouselTimer = setInterval(() => moveCarousel(1), 4000);
-}
-function stopCarouselAuto() { clearInterval(carouselTimer); }
 
-function moveCarousel(dir) {
-  const track = document.getElementById('carousel-track');
-  const cards = track?.querySelectorAll('.project-card');
-  if (!cards || cards.length === 0) return;
+    clearInterval(carouselTimer);
 
-  const visibleCount = window.innerWidth < 700 ? 1 : window.innerWidth < 1100 ? 2 : 3;
-  const maxIndex = Math.max(0, cards.length - visibleCount);
-  carouselIndex = Math.max(0, Math.min(carouselIndex + dir, maxIndex));
+    carouselTimer = setInterval(() => {
 
-  const cardW = cards[0].offsetWidth + 24; // gap
-  track.style.transform = `translateX(-${carouselIndex * cardW}px)`;
-  updateCarouselDots();
+        moveCarousel(1, false);
+
+    }, CAROUSEL_DELAY);
+
 }
 
-function goToSlide(i) {
-  carouselIndex = i;
-  const track = document.getElementById('carousel-track');
-  const cards = track?.querySelectorAll('.project-card');
-  if (!cards || cards.length === 0) return;
-  const cardW = cards[0].offsetWidth + 24;
-  track.style.transform = `translateX(-${carouselIndex * cardW}px)`;
-  updateCarouselDots();
-  stopCarouselAuto();
-  startCarouselAuto();
+function restartCarouselAuto() {
+
+    clearInterval(carouselTimer);
+
+    startCarouselAuto();
+
+}
+
+function stopCarouselAuto() {
+
+    clearInterval(carouselTimer);
+
+}
+
+function moveCarousel(dir, userInteraction = true) {
+
+    if (userInteraction)
+        restartCarouselAuto();
+
+    const track = document.getElementById("carousel-track");
+    const cards = track?.querySelectorAll(".project-card");
+
+    if (!cards.length) return;
+
+    const visibleCount =
+        window.innerWidth < 700 ? 1 :
+        window.innerWidth < 1100 ? 2 : 3;
+
+    const realCount = PROJECTS.length;
+
+    const cardW = cards[0].offsetWidth + 24;
+
+    carouselIndex += dir;
+
+    track.style.transition = "transform .45s ease";
+    track.style.transform =
+        `translateX(-${carouselIndex * cardW}px)`;
+
+    updateCarouselDots();
+
+    track.ontransitionend = () => {
+
+        track.ontransitionend = null;
+
+        if (carouselIndex >= realCount + visibleCount) {
+
+            carouselIndex = visibleCount;
+
+            track.style.transition = "none";
+            track.style.transform =
+                `translateX(-${carouselIndex * cardW}px)`;
+
+        }
+
+        if (carouselIndex < visibleCount) {
+
+            carouselIndex = realCount + visibleCount - 1;
+
+            track.style.transition = "none";
+            track.style.transform =
+                `translateX(-${carouselIndex * cardW}px)`;
+
+        }
+
+        updateCarouselDots();
+
+    };
+
+}
+
+function goToSlide(index) {
+
+    const visibleCount =
+        window.innerWidth < 700 ? 1 :
+        window.innerWidth < 1100 ? 2 : 3;
+
+    carouselIndex = index + visibleCount;
+
+    const track = document.getElementById("carousel-track");
+    const card = track.querySelector(".project-card");
+
+    const cardW = card.offsetWidth + 24;
+
+    track.style.transition = "transform .45s ease";
+    track.style.transform =
+        `translateX(-${carouselIndex * cardW}px)`;
+
+    updateCarouselDots();
+
+    restartCarouselAuto();
+
 }
 
 function updateCarouselDots() {
-  document.querySelectorAll('#carousel-dots .carousel-dot').forEach((d, i) => {
-    d.classList.toggle('active', i === carouselIndex);
-  });
+
+    const visibleCount =
+        window.innerWidth < 700 ? 1 :
+        window.innerWidth < 1100 ? 2 : 3;
+
+    let active =
+        (carouselIndex - visibleCount) % PROJECTS.length;
+
+    if (active < 0)
+        active += PROJECTS.length;
+
+    document
+        .querySelectorAll("#carousel-dots .carousel-dot")
+        .forEach((dot, i) =>
+            dot.classList.toggle("active", i === active)
+        );
+
 }
 
 // ── About mini ──
@@ -352,6 +504,7 @@ function renderProject(slug) {
   if (idx === -1) { navigate('home'); return; }
   currentProjectIndex = idx;
   const p = PROJECTS[idx];
+  applyProjectTheme(p);
 
   document.getElementById('project-hero-img').src = p.heroImage || p.coverImage;
   document.getElementById('project-hero-img').alt = p.title;
@@ -398,8 +551,14 @@ function renderProject(slug) {
   ); 
 
   // Prev/Next
-  const prev = idx > 0 ? PROJECTS[idx - 1] : null;
-  const next = idx < PROJECTS.length - 1 ? PROJECTS[idx + 1] : null;
+  const prevIndex =
+    (idx - 1 + PROJECTS.length) % PROJECTS.length;
+
+  const nextIndex =
+    (idx + 1) % PROJECTS.length;
+
+  const prev = PROJECTS[prevIndex];
+  const next = PROJECTS[nextIndex];
 
   const prevBtn = document.getElementById('btn-prev-project');
   const nextBtn = document.getElementById('btn-next-project');
@@ -419,8 +578,27 @@ function renderProject(slug) {
     } else { nextBtn.style.display = 'none'; }
   }
 
-  document.documentElement.style.setProperty('--accent', p.color || '#ff4655');
-  setTimeout(() => document.documentElement.style.removeProperty('--accent'), 3000);
+  document.documentElement.style.setProperty(
+    '--accent',
+    p.color || '#ff4655'
+  );
+}
+
+function applyProjectTheme(project) {
+
+  const color = project.color || '#ff4655';
+
+  document.documentElement.style.setProperty(
+    '--accent',
+    color
+  );
+}
+
+function resetTheme() {
+  document.documentElement.style.removeProperty('--accent');
+  document.documentElement.style.removeProperty('--accent2');
+  document.documentElement.style.removeProperty('--accent3');
+  document.documentElement.style.removeProperty('--accent4');
 }
 
 function linkIcon(type) {
@@ -441,70 +619,243 @@ function renderGallery(images = []) {
 
     const track = document.getElementById("gallery-track");
 
-    if (!track)
-        return;
+    if (!track) return;
 
     galleryIndex = 0;
+    lightboxImages = images;
 
     track.innerHTML = "";
 
     if (!images.length) {
-
         track.parentElement.style.display = "none";
         return;
     }
 
     track.parentElement.style.display = "block";
 
-    images.forEach(src => {
+
+    const visibleItems = 2;
+
+
+    const galleryItems = images.map((src, index) => {
 
         const filename = src.split("/").pop();
-
         const label = filename.replace(/\.[^.]+$/, "");
 
-        const wrapper = document.createElement("div");
+        return `
+            <div class="gallery-item-wrapper">
 
-        wrapper.className = "gallery-item-wrapper";
+                <img
+                    class="gallery-item"
+                    src="${src}"
+                    alt="${label}"
+                    loading="lazy"
+                    onclick="openLightbox(${index})"
+                >
 
-        wrapper.innerHTML = `
-            <img
-                class="gallery-item"
-                src="${src}"
-                alt="${label}"
-                loading="lazy"
-            >
-            <div class="gallery-item-label">${label}</div>
+                <div class="gallery-item-label">
+                    ${label}
+                </div>
+
+            </div>
         `;
 
-        wrapper.querySelector("img")
-            .addEventListener("click", () =>
-                openLightbox(src, label)
-            );
-
-        track.appendChild(wrapper);
     });
+
+
+    const prepend = galleryItems.slice(-visibleItems);
+    const append = galleryItems.slice(0, visibleItems);
+
+
+    track.innerHTML =
+        prepend.join("") +
+        galleryItems.join("") +
+        append.join("");
+
+
+    requestAnimationFrame(() => {
+
+        const item =
+            track.querySelector(".gallery-item-wrapper");
+
+        if (!item) return;
+
+
+        const itemWidth =
+            item.offsetWidth + 16;
+
+
+        galleryIndex = visibleItems;
+
+
+        track.style.transition = "none";
+
+        track.style.transform =
+            `translateX(-${galleryIndex * itemWidth}px)`;
+
+
+        requestAnimationFrame(() => {
+
+            track.style.transition =
+                "transform .45s ease";
+
+        });
+
+
+    });
+
 }
 
 function moveGallery(dir) {
-  const track = document.getElementById('gallery-track');
-  const items = track?.querySelectorAll('.gallery-item-wrapper');
-  if (!items || items.length === 0) return;
-  const max = Math.max(0, items.length - 2);
-  galleryIndex = Math.max(0, Math.min(galleryIndex + dir, max));
-  const itemW = items[0].offsetWidth + 16;
-  track.style.transform = `translateX(-${galleryIndex * itemW}px)`;
+
+    const track = document.getElementById("gallery-track");
+    const items = track?.querySelectorAll(".gallery-item-wrapper");
+
+    if (!track || !items.length) return;
+
+    const visibleItems = 2;
+    const realCount = items.length - visibleItems * 2;
+
+    const itemWidth = items[0].offsetWidth + 16;
+
+    galleryIndex += dir;
+
+    track.style.transition = "transform .45s ease";
+    track.style.transform =
+        `translateX(-${galleryIndex * itemWidth}px)`;
+
+    track.ontransitionend = () => {
+
+        track.ontransitionend = null;
+
+        if (galleryIndex >= realCount + visibleItems) {
+
+            galleryIndex = visibleItems;
+
+            track.style.transition = "none";
+            track.style.transform =
+                `translateX(-${galleryIndex * itemWidth}px)`;
+
+        }
+
+        if (galleryIndex < visibleItems) {
+
+            galleryIndex = realCount + visibleItems - 1;
+
+            track.style.transition = "none";
+            track.style.transform =
+                `translateX(-${galleryIndex * itemWidth}px)`;
+
+        }
+
+    };
+
 }
 
-function openLightbox(src, name) {
-  const lb = document.getElementById('lightbox');
-  if (!lb) return;
-  lb.querySelector('img').src = src;
-  const caption = lb.querySelector('.lightbox-caption');
-  if (caption) caption.textContent = name || src.split('/').pop().replace(/\.[^.]+$/, '');
-  lb.classList.add('open');
+function openLightbox(index) {
+
+    const lb = document.getElementById('lightbox');
+
+    if (!lb) return;
+
+
+    lightboxCurrentIndex = index;
+
+
+    updateLightbox();
+
+
+    lb.classList.add('open');
+
+
+    document.body.style.overflow = "hidden";
+
 }
+
+function updateLightbox() {
+
+    const lb =
+        document.getElementById('lightbox');
+
+    if (!lb || !lightboxImages.length)
+        return;
+
+
+    const img =
+        lb.querySelector('img');
+
+
+    const caption =
+        lb.querySelector('.lightbox-caption');
+
+
+    const src =
+        lightboxImages[lightboxCurrentIndex];
+
+
+    img.src = src;
+
+
+    const filename =
+        src.split('/').pop()
+        .replace(/\.[^.]+$/, "");
+
+
+    img.alt = filename;
+
+
+    if (caption)
+        caption.textContent = filename;
+
+
+}
+
+function changeLightboxImage(direction) {
+
+
+    if (!lightboxImages.length)
+        return;
+
+
+    lightboxCurrentIndex += direction;
+
+
+
+    if (lightboxCurrentIndex < 0) {
+
+        lightboxCurrentIndex =
+            lightboxImages.length - 1;
+
+    }
+
+
+    if (lightboxCurrentIndex >= lightboxImages.length) {
+
+        lightboxCurrentIndex = 0;
+
+    }
+
+
+
+    updateLightbox();
+
+}
+
 function closeLightbox() {
-  document.getElementById('lightbox')?.classList.remove('open');
+
+    const lb =
+        document.getElementById('lightbox');
+
+
+    if (!lb)
+        return;
+
+
+    lb.classList.remove('open');
+
+
+    document.body.style.overflow = "";
+
 }
 
 // =========================================
@@ -623,6 +974,34 @@ function initMobileNav() {
   }
 }
 
+function initLightboxKeyboard(){
+
+    document.addEventListener('keydown', e=>{
+
+        const lb =
+            document.getElementById('lightbox');
+
+
+        if(!lb?.classList.contains('open'))
+            return;
+
+
+        if(e.key === "ArrowLeft")
+            changeLightboxImage(-1);
+
+
+        if(e.key === "ArrowRight")
+            changeLightboxImage(1);
+
+
+        if(e.key === "Escape")
+            closeLightbox();
+
+
+    });
+
+}
+
 // =========================================
 // CUSTOM CURSOR
 // =========================================
@@ -658,28 +1037,62 @@ function showToast(msg) {
 // SCROLL EFFECTS
 // =========================================
 function initScrollEffects() {
+
   const observer = new IntersectionObserver(entries => {
+
     entries.forEach(entry => {
+
       if (entry.isIntersecting) {
+
         entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+
+        if (!entry.target.classList.contains('project-card')) {
+          entry.target.style.transform = 'translateY(0)';
+        }
+
       }
+
     });
+
   }, { threshold: 0.1 });
 
+
   const observe = () => {
-    document.querySelectorAll('.project-card, .project-list-item, .stat-box, .skill-pill, .cv-item, .contact-card').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(el);
-    });
+
+    document
+      .querySelectorAll('.project-list-item, .stat-box, .skill-pill, .cv-item, .contact-card')
+      .forEach(el => {
+
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(24px)';
+        el.style.transition =
+          'opacity 0.5s ease, transform 0.5s ease';
+
+        observer.observe(el);
+
+      });
+
   };
 
-  // Re-observe on page change
-  const hashObs = new MutationObserver(observe);
-  hashObs.observe(document.getElementById('app'), { childList: true, subtree: true });
+
+  const app = document.getElementById('app');
+
+  if (app) {
+
+    const hashObs = new MutationObserver(() => {
+      observe();
+    });
+
+    hashObs.observe(app, {
+      childList:true,
+      subtree:true
+    });
+
+  }
+
+
   observe();
+
 }
 
 // =========================================
@@ -733,6 +1146,7 @@ window.filterProjects = filterProjects;
 window.moveGallery = moveGallery;
 window.openLightbox = openLightbox;
 window.closeLightbox = closeLightbox;
+window.changeLightboxImage = changeLightboxImage;
 window.closeMinigame = closeMinigame;
 
 // ── Boot ──

@@ -340,6 +340,7 @@ body::after {
   position: relative;
   overflow: hidden;
 }
+
 .carousel-track {
   display: flex;
   gap: 1.5rem;
@@ -461,10 +462,11 @@ body::after {
 /* Carousel arrows */
 .carousel-arrow {
   position: absolute;
-  top: calc(50% - 30px);
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   background: var(--surface2);
   border: 1px solid var(--border);
   color: var(--text);
@@ -474,9 +476,10 @@ body::after {
   justify-content: center;
   transition: background var(--transition), border-color var(--transition);
 }
+
 .carousel-arrow:hover { background: var(--accent); border-color: var(--accent); }
-.carousel-arrow.prev { left: -20px; }
-.carousel-arrow.next { right: -20px; }
+.carousel-arrow.prev { left: 0px; }
+.carousel-arrow.next { right: 0px; }
 
 /* =========================================
    ABOUT MINI (landing section)
@@ -873,7 +876,7 @@ body::after {
 
 .project-layout {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   gap: 3rem;
   align-items: start;
 }
@@ -1091,6 +1094,48 @@ body::after {
   max-width: 80vw;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Lightbox navigation */
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--pixel);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9100;
+  transition: all var(--transition);
+}
+
+.lightbox-nav:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.lightbox-prev {
+  left: 2rem;
+}
+
+.lightbox-next {
+  right: 2rem;
+}
+
+@media(max-width:600px) {
+  .lightbox-prev {
+    left: 0.75rem;
+  }
+
+  .lightbox-next {
+    right: 0.75rem;
+  }
 }
 
 /* =========================================

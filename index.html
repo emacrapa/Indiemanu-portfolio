@@ -20,7 +20,13 @@
 <!-- ── Lightbox ── -->
 <div id="lightbox" role="dialog" aria-modal="true">
   <button class="lightbox-close" onclick="closeLightbox()">✕ CLOSE</button>
+  <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)" aria-label="Previous image">
+    ◀
+  </button>
   <img src="" alt="Gallery image">
+  <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)" aria-label="Next image">
+    ▶
+  </button>
   <div class="lightbox-caption"></div>
 </div>
 
