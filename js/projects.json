@@ -36,7 +36,8 @@
         }
       ],
       "color": "#e8830a",
-      "galleryFolder": "/files/images/gallery/motogp25"
+      "galleryFolder": "/files/images/gallery/motogp25",
+      "gallery": []
     },
     {
       "id": "ride6",
@@ -74,7 +75,8 @@
         }
       ],
       "color": "#e8830a",
-      "galleryFolder": "/files/images/gallery/ride6"
+      "galleryFolder": "/files/images/gallery/ride6",
+      "gallery": []
     },
     {
       "id": "ogu-and-the-secret-forest",
@@ -112,7 +114,8 @@
         }
       ],
       "color": "#e8830a",
-      "galleryFolder": "/files/images/gallery/ogu-and-the-secret-forest"
+      "galleryFolder": "/files/images/gallery/ogu-and-the-secret-forest",
+      "gallery": []
     },
     {
       "id": "narcisos-dream",
@@ -148,7 +151,15 @@
         }
       ],
       "color": "#6b3fa0",
-      "galleryFolder": "/files/images/gallery/narcisos-dream"
+      "galleryFolder": "/files/images/gallery/narcisos-dream",
+      "gallery": [
+        "/files/images/gallery/narcisos-dream/Credits.png",
+        "/files/images/gallery/narcisos-dream/InGame.png",
+        "/files/images/gallery/narcisos-dream/Lose screen.png",
+        "/files/images/gallery/narcisos-dream/Main Menu.png",
+        "/files/images/gallery/narcisos-dream/Map is Changing.png",
+        "/files/images/gallery/narcisos-dream/NightMare.png"
+      ]
     },
     {
       "id": "dwarfkeeper",
@@ -177,7 +188,20 @@
       "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
       "links": [],
       "color": "#7b5ea7",
-      "galleryFolder": "/files/images/gallery/dwarfkeeper"
+      "galleryFolder": "/files/images/gallery/dwarfkeeper",
+      "gallery": [
+        "/files/images/gallery/dwarfkeeper/Cauldron & Grill.png",
+        "/files/images/gallery/dwarfkeeper/Credits.png",
+        "/files/images/gallery/dwarfkeeper/Cut.png",
+        "/files/images/gallery/dwarfkeeper/Dialogues.png",
+        "/files/images/gallery/dwarfkeeper/Earn Money.png",
+        "/files/images/gallery/dwarfkeeper/Grill.png",
+        "/files/images/gallery/dwarfkeeper/Ingredients.png",
+        "/files/images/gallery/dwarfkeeper/MainMenu.png",
+        "/files/images/gallery/dwarfkeeper/Meet The Merchant.png",
+        "/files/images/gallery/dwarfkeeper/RecipeBook & Cutting Board.png",
+        "/files/images/gallery/dwarfkeeper/The Tavern.png"
+      ]
     },
     {
       "id": "karen-jaeger",
@@ -213,7 +237,19 @@
         }
       ],
       "color": "#6b3fa0",
-      "galleryFolder": "/files/images/gallery/karen-jaeger"
+      "galleryFolder": "/files/images/gallery/karen-jaeger",
+      "gallery": [
+        "/files/images/gallery/karen-jaeger/Chaos.png",
+        "/files/images/gallery/karen-jaeger/Controls.png",
+        "/files/images/gallery/karen-jaeger/Credits.png",
+        "/files/images/gallery/karen-jaeger/InGame.png",
+        "/files/images/gallery/karen-jaeger/Level Design.png",
+        "/files/images/gallery/karen-jaeger/LoseScreen.png",
+        "/files/images/gallery/karen-jaeger/MainMenu.png",
+        "/files/images/gallery/karen-jaeger/Pause Menu.png",
+        "/files/images/gallery/karen-jaeger/Prologue.png",
+        "/files/images/gallery/karen-jaeger/The Mall.png"
+      ]
     },
     {
       "id": "snag-a-bug",
@@ -249,18 +285,19 @@
         }
       ],
       "color": "#6b3fa0",
-      "galleryFolder": "/files/images/gallery/snag-a-bug"
+      "galleryFolder": "/files/images/gallery/snag-a-bug",
+      "gallery": []
     },
     {
       "id": "hover-2024",
-      "slug": "hover-remake",
-      "title": "Hover Remake",
+      "slug": "hover-2024",
+      "title": "Hover 2024",
       "subtitle": "Event Horizon School — Remakes",
       "category": "remake",
       "categoryLabel": "Remake",
       "year": 2024,
-      "coverImage": "/files/images/Cover/hover-remake.png",
-      "heroImage": "/files/images/hero/hover-remake.png",
+      "coverImage": "/files/images/Cover/hover-2024.png",
+      "heroImage": "/files/images/hero/hover-2024.png",
       "role": "Game Designer & Project Manager",
       "duration": "3 weeks",
       "teamSize": "18 members",
@@ -285,7 +322,18 @@
         }
       ],
       "color": "#0a84e8",
-      "galleryFolder": "/files/images/gallery/hover-remake"
+      "galleryFolder": "/files/images/gallery/hover-2024",
+      "gallery": [
+        "/files/images/gallery/hover-2024/Credits.png",
+        "/files/images/gallery/hover-2024/EasterEgg.png",
+        "/files/images/gallery/hover-2024/In Game Otions.png",
+        "/files/images/gallery/hover-2024/In Game.png",
+        "/files/images/gallery/hover-2024/LoseScreen.png",
+        "/files/images/gallery/hover-2024/MainMenu.png",
+        "/files/images/gallery/hover-2024/Map from Top.png",
+        "/files/images/gallery/hover-2024/Map.png",
+        "/files/images/gallery/hover-2024/PowerUps.png"
+      ]
     },
     {
       "id": "berty-road",
@@ -321,7 +369,15 @@
         }
       ],
       "color": "#0a84e8",
-      "galleryFolder": "/files/images/gallery/berty-road"
+      "galleryFolder": "/files/images/gallery/berty-road",
+      "gallery": [
+        "/files/images/gallery/berty-road/Credits.png",
+        "/files/images/gallery/berty-road/Industrial Revolution.png",
+        "/files/images/gallery/berty-road/MainMenu.png",
+        "/files/images/gallery/berty-road/Middle Age.png",
+        "/files/images/gallery/berty-road/PreHistory.png",
+        "/files/images/gallery/berty-road/Skins.png"
+      ]
     },
     {
       "id": "descent-remake",
@@ -357,7 +413,19 @@
         }
       ],
       "color": "#0a84e8",
-      "galleryFolder": "/files/images/gallery/descent-remake"
+      "galleryFolder": "/files/images/gallery/descent-remake",
+      "gallery": [
+        "/files/images/gallery/descent-remake/Controls.png",
+        "/files/images/gallery/descent-remake/Credits.png",
+        "/files/images/gallery/descent-remake/Destroy The Core.png",
+        "/files/images/gallery/descent-remake/Discover Powerful Weapons.png",
+        "/files/images/gallery/descent-remake/Escape Before the MeltDown.png",
+        "/files/images/gallery/descent-remake/In Game.png",
+        "/files/images/gallery/descent-remake/Lava Room.png",
+        "/files/images/gallery/descent-remake/MainMenu.png",
+        "/files/images/gallery/descent-remake/Prologue.png",
+        "/files/images/gallery/descent-remake/Retrieve The Crates.png"
+      ]
     },
     {
       "id": "seedious-sam-xd",
@@ -398,7 +466,16 @@
         }
       ],
       "color": "#2ea84a",
-      "galleryFolder": "/files/images/gallery/seedious-sam-xd"
+      "galleryFolder": "/files/images/gallery/seedious-sam-xd",
+      "gallery": [
+        "/files/images/gallery/seedious-sam-xd/Credits.png",
+        "/files/images/gallery/seedious-sam-xd/In Game.png",
+        "/files/images/gallery/seedious-sam-xd/MainMenu.png",
+        "/files/images/gallery/seedious-sam-xd/More Roots.png",
+        "/files/images/gallery/seedious-sam-xd/Promo.png",
+        "/files/images/gallery/seedious-sam-xd/Roots.png",
+        "/files/images/gallery/seedious-sam-xd/Win Screen.png"
+      ]
     },
     {
       "id": "lay-down-comedy",
@@ -439,7 +516,15 @@
         }
       ],
       "color": "#2ea84a",
-      "galleryFolder": "/files/images/gallery/lay-down-comedy"
+      "galleryFolder": "/files/images/gallery/lay-down-comedy",
+      "gallery": [
+        "/files/images/gallery/lay-down-comedy/Bouncy Rats.png",
+        "/files/images/gallery/lay-down-comedy/Level1.png",
+        "/files/images/gallery/lay-down-comedy/Original Defensive Strategies.png",
+        "/files/images/gallery/lay-down-comedy/Prologue.png",
+        "/files/images/gallery/lay-down-comedy/Throw Chairs!.png",
+        "/files/images/gallery/lay-down-comedy/Tutorial-Menu.png"
+      ]
     },
     {
       "id": "hellivery",
@@ -480,7 +565,8 @@
         }
       ],
       "color": "#2ea84a",
-      "galleryFolder": "/files/images/gallery/hellivery"
+      "galleryFolder": "/files/images/gallery/hellivery",
+      "gallery": []
     },
     {
       "id": "totally-inaccurate-solar-system-simulator",
@@ -522,7 +608,12 @@
         }
       ],
       "color": "#c8860a",
-      "galleryFolder": "/files/images/gallery/totally-inaccurate-solar-system-simulator"
+      "galleryFolder": "/files/images/gallery/totally-inaccurate-solar-system-simulator",
+      "gallery": [
+        "/files/images/gallery/totally-inaccurate-solar-system-simulator/Comets.png",
+        "/files/images/gallery/totally-inaccurate-solar-system-simulator/Point Planets.png",
+        "/files/images/gallery/totally-inaccurate-solar-system-simulator/Scene.png"
+      ]
     },
     {
       "id": "proxima-the-last-stand",
@@ -564,7 +655,20 @@
         }
       ],
       "color": "#c8860a",
-      "galleryFolder": "/files/images/gallery/proxima-the-last-stand"
+      "galleryFolder": "/files/images/gallery/proxima-the-last-stand",
+      "gallery": [
+        "/files/images/gallery/proxima-the-last-stand/Arena Prologue.png",
+        "/files/images/gallery/proxima-the-last-stand/Asteroids Rain.png",
+        "/files/images/gallery/proxima-the-last-stand/Defend Gaea.png",
+        "/files/images/gallery/proxima-the-last-stand/FullMap.png",
+        "/files/images/gallery/proxima-the-last-stand/In Game.png",
+        "/files/images/gallery/proxima-the-last-stand/InGame.png",
+        "/files/images/gallery/proxima-the-last-stand/Levels.png",
+        "/files/images/gallery/proxima-the-last-stand/Main Menu.png",
+        "/files/images/gallery/proxima-the-last-stand/Prologue.png",
+        "/files/images/gallery/proxima-the-last-stand/The Arena.png",
+        "/files/images/gallery/proxima-the-last-stand/The Black Hole.png"
+      ]
     },
     {
       "id": "tales-of-ekrund",
@@ -606,7 +710,18 @@
         }
       ],
       "color": "#c8860a",
-      "galleryFolder": "/files/images/gallery/tales-of-ekrund"
+      "galleryFolder": "/files/images/gallery/tales-of-ekrund",
+      "gallery": [
+        "/files/images/gallery/tales-of-ekrund/Doors & Platforms.png",
+        "/files/images/gallery/tales-of-ekrund/Enemies & PowerUps.png",
+        "/files/images/gallery/tales-of-ekrund/Levels.png",
+        "/files/images/gallery/tales-of-ekrund/LowerCaves.png",
+        "/files/images/gallery/tales-of-ekrund/MainMenu.png",
+        "/files/images/gallery/tales-of-ekrund/The Deep, Level Design.png",
+        "/files/images/gallery/tales-of-ekrund/The Deep.png",
+        "/files/images/gallery/tales-of-ekrund/Tutorial.png",
+        "/files/images/gallery/tales-of-ekrund/UnderGround.png"
+      ]
     },
     {
       "id": "athena",
@@ -643,7 +758,19 @@
         }
       ],
       "color": "#e83838",
-      "galleryFolder": "/files/images/gallery/athena"
+      "galleryFolder": "/files/images/gallery/athena",
+      "gallery": [
+        "/files/images/gallery/athena/Abilities.png",
+        "/files/images/gallery/athena/Cooperation.png",
+        "/files/images/gallery/athena/Credits.png",
+        "/files/images/gallery/athena/Destroy.png",
+        "/files/images/gallery/athena/Ending Screen.png",
+        "/files/images/gallery/athena/Fight.png",
+        "/files/images/gallery/athena/Lobby.png",
+        "/files/images/gallery/athena/LobbyMenu.png",
+        "/files/images/gallery/athena/Main Menu.png",
+        "/files/images/gallery/athena/TrapDoors.png"
+      ]
     },
     {
       "id": "the-hike",
@@ -680,7 +807,17 @@
         }
       ],
       "color": "#e83838",
-      "galleryFolder": "/files/images/gallery/the-hike"
+      "galleryFolder": "/files/images/gallery/the-hike",
+      "gallery": [
+        "/files/images/gallery/the-hike/AllLevel.png",
+        "/files/images/gallery/the-hike/CutScene.png",
+        "/files/images/gallery/the-hike/Last Section.png",
+        "/files/images/gallery/the-hike/Logs!.png",
+        "/files/images/gallery/the-hike/Monkey Island.png",
+        "/files/images/gallery/the-hike/Parkour.png",
+        "/files/images/gallery/the-hike/Portals.png",
+        "/files/images/gallery/the-hike/Start.png"
+      ]
     },
     {
       "id": "waters-grave",
@@ -717,7 +854,16 @@
         }
       ],
       "color": "#e83838",
-      "galleryFolder": "/files/images/gallery/waters-grave"
+      "galleryFolder": "/files/images/gallery/waters-grave",
+      "gallery": [
+        "/files/images/gallery/waters-grave/CutScene.png",
+        "/files/images/gallery/waters-grave/MainMenu.png",
+        "/files/images/gallery/waters-grave/Release The Water.png",
+        "/files/images/gallery/waters-grave/Start.png",
+        "/files/images/gallery/waters-grave/Taps.png",
+        "/files/images/gallery/waters-grave/The Last Tap.png",
+        "/files/images/gallery/waters-grave/Tiba Settlement.png"
+      ]
     }
   ],
   "categories": [

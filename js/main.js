@@ -393,7 +393,9 @@ function renderProject(slug) {
   `).join('') || '<div style="color:var(--text-dim);font-size:11px">No links available yet</div>';
 
   // Gallery — pass folder path; renderGallery probes for images
-  renderGallery(p.galleryFolder || null, p.gallery || []);
+  renderGallery(
+    p.gallery || []
+  ); 
 
   // Prev/Next
   const prev = idx > 0 ? PROJECTS[idx - 1] : null;
@@ -434,56 +436,53 @@ function linkIcon(type) {
 // folder. Images that 404 are silently skipped via onerror.
 // On hover shows a semi-transparent overlay with the filename.
 // ──────────────────────────────────────────────────────────────────────
-const MAX_GALLERY = 20; // probe up to this many numbered images
 
-function renderGallery(galleryFolder, fallbackImages) {
-  const track = document.getElementById('gallery-track');
-  if (!track) return;
-  galleryIndex = 0;
-  track.innerHTML = '';
+function renderGallery(images = []) {
 
-  // Build candidate list
-  let candidates = [];
-  if (galleryFolder) {
-    // Normalise trailing slash
-    const folder = galleryFolder.replace(/\/$/, '');
-    for (let i = 1; i <= MAX_GALLERY; i++) {
-      candidates.push(`${folder}/${i}.png`);
+    const track = document.getElementById("gallery-track");
+
+    if (!track)
+        return;
+
+    galleryIndex = 0;
+
+    track.innerHTML = "";
+
+    if (!images.length) {
+
+        track.parentElement.style.display = "none";
+        return;
     }
-    // Also probe common named variants just in case
-    // (they'll silently fail if absent)
-  } else if (fallbackImages && fallbackImages.length) {
-    candidates = fallbackImages;
-  }
 
-  if (candidates.length === 0) {
-    track.parentElement.style.display = 'none';
-    return;
-  }
-  track.parentElement.style.display = 'block';
+    track.parentElement.style.display = "block";
 
-  // We must probe each image — insert all, hide on error
-  candidates.forEach(src => {
-    const filename = src.split('/').pop(); // e.g. "1.png" or "boss_arena.png"
-    const baseName = filename.replace(/\.[^.]+$/, ''); // strip extension
+    images.forEach(src => {
 
-    const wrapper = document.createElement('div');
-    wrapper.className = 'gallery-item-wrapper';
-    wrapper.innerHTML = `
-      <img class="gallery-item" src="${src}" alt="${baseName}" loading="lazy"
-           onerror="this.closest('.gallery-item-wrapper').remove(); updateGalleryVisibility();">
-      <div class="gallery-item-label">${baseName}</div>
-    `;
-    wrapper.querySelector('img').addEventListener('click', () => openLightbox(src, baseName));
-    track.appendChild(wrapper);
-  });
-}
+        const filename = src.split("/").pop();
 
-function updateGalleryVisibility() {
-  const track = document.getElementById('gallery-track');
-  if (!track) return;
-  const remaining = track.querySelectorAll('.gallery-item-wrapper').length;
-  track.parentElement.style.display = remaining === 0 ? 'none' : 'block';
+        const label = filename.replace(/\.[^.]+$/, "");
+
+        const wrapper = document.createElement("div");
+
+        wrapper.className = "gallery-item-wrapper";
+
+        wrapper.innerHTML = `
+            <img
+                class="gallery-item"
+                src="${src}"
+                alt="${label}"
+                loading="lazy"
+            >
+            <div class="gallery-item-label">${label}</div>
+        `;
+
+        wrapper.querySelector("img")
+            .addEventListener("click", () =>
+                openLightbox(src, label)
+            );
+
+        track.appendChild(wrapper);
+    });
 }
 
 function moveGallery(dir) {
