@@ -65,7 +65,7 @@ function router() {
   
   if (hash === '#home' || hash === '') {
     showPage('page-home');
-    document.querySelector('[href="#home"]')?.classList.add('active');
+    document.querySelector('.nav-links [href="#home"]')?.classList.add('active');
     renderHome();
   } else if (hash === '#projects') {
     stopCarouselAuto();
