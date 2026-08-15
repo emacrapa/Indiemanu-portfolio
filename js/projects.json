@@ -123,6 +123,11 @@
           "label": "Steam Page",
           "url": "https://store.steampowered.com/app/1985960/Ogu_and_the_secret_forest/",
           "icon": "steam"
+        },
+        {
+          "label": "Watch Trailer",
+          "url": "https://www.youtube.com/watch?v=yliOC04Pnr8",
+          "icon": "youtube"
         }
       ],
       "color": "#e8830a",
@@ -170,7 +175,7 @@
         }
       ],
       "color": "#e8830a",
-      "galleryFolder": "files/images/gallery/ogu-and-the-secret-forest",
+      "galleryFolder": "files/images/gallery/hotwheels-infinite-rush",
       "gallery": []
     },
     {
@@ -202,7 +207,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/narcisos-dream",
+          "url": "https://indiemanu.itch.io/narcisos-dream?secret=mPJM36Q2VRa0cJUsus4HRaBHI4",
           "icon": "itch"
         },
         {
@@ -249,7 +254,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/dwarfkeeper",
+          "url": "https://indiemanu.itch.io/dwarfkeeper?secret=OPh2V5QAlwkqrDRONoRZMMwO8cY",
           "icon": "itch"
         },
         {
@@ -303,7 +308,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/karen-jaeger",
+          "url": "https://indiemanu.itch.io/karen-jaeger?secret=e9vBD0EEn5gAwk83qG2IeXXL6PI",
           "icon": "itch"
         },
         {
@@ -354,18 +359,8 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/snag-a-bug",
+          "url": "https://indiemanu.itch.io/snag-a-bug?secret=puxi9uPuSGeMJ1u7B3vBmu1lgA",
           "icon": "itch"
-        },
-        {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
-          "icon": "download"
-        },
-        {
-          "label": "Download Pitch",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
-          "icon": "download"
         }
       ],
       "color": "#6b3fa0",
@@ -401,7 +396,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/hover-2024",
+          "url": "https://indiemanu.itch.io/hover-2024?secret=G4M3z0F2yqt7zm3o2MmwzgYSA",
           "icon": "itch"
         }
       ],
@@ -448,7 +443,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/berty-road",
+          "url": "https://indiemanu.itch.io/berty-road?secret=jM47sV0qdaFhBi5xxvTkgi8Ykqs",
           "icon": "itch"
         }
       ],
@@ -492,7 +487,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/descent-remake",
+          "url": "https://indiemanu.itch.io/descent-remake?secret=kgqjzVn29EG9eJJlhtqw47Wxm8",
           "icon": "itch"
         }
       ],
@@ -590,7 +585,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/lay-down-comedy",
+          "url": "https://indiemanu.itch.io/lay-down-comedy?secret=JiQ23G6G4IfEqsnUoEBZMwwiYZY",
           "icon": "itch"
         }
       ],
@@ -811,13 +806,18 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/athena",
+          "url": "https://indiemanu.itch.io/athena?secret=UoM6JjCg7XOipjk5emIo72Ptac",
           "icon": "itch"
         },
         {
           "label": "Pitch Deck (PDF)",
           "url": "files/pitches/Pitch%20ATHENA.pdf",
           "icon": "download"
+        },
+        {
+          "label": "Watch Trailer",
+          "url": "https://www.youtube.com/watch?v=267NDL9buMU",
+          "icon": "youtube"
         }
       ],
       "color": "#e83838",
@@ -864,7 +864,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/the-hike",
+          "url": "https://indiemanu.itch.io/the-hike?secret=hwgI1SHm9R9blcIa3ocgRmTh3S4",
           "icon": "itch"
         }
       ],
@@ -910,7 +910,7 @@
       "links": [
         {
           "label": "Download Build",
-          "url": "https://indiemanu.itch.io/waters-grave",
+          "url": "https://indiemanu.itch.io/waters-grave?secret=ojeL8ChXd53gjizOxbjVYJukw",
           "icon": "itch"
         }
       ],
