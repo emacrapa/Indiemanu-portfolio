@@ -8,8 +8,8 @@
       "category": "shipped",
       "categoryLabel": "Shipped Game",
       "year": 2025,
-      "coverImage": "/files/images/cover/motogp25.png",
-      "heroImage": "/files/images/hero/motogp25.png",
+      "coverImage": "files/images/cover/motogp25.png",
+      "heroImage": "files/images/hero/motogp25.png",
       "role": "QA Tester",
       "duration": "~6 months",
       "teamSize": "~200+ (full studio)",
@@ -29,7 +29,7 @@
       "longDescription": "MotoGP 25 was my first project at Milestone S.r.l., where I joined the QA team to test motorcycles and tracks across the full roster of the official MotoGP simulation. My work covered functional testing of vehicles, circuits and game content, helping the team catch and resolve issues ahead of certification. The project reached a successful multi-platform submission and shipped internationally to strong critical reception — a first taste of AAA QA work at scale.",
       "links": [],
       "color": "#e8830a",
-      "galleryFolder": "/files/images/gallery/motogp25",
+      "galleryFolder": "files/images/gallery/motogp25",
       "gallery": []
     },
     {
@@ -40,8 +40,8 @@
       "category": "shipped",
       "categoryLabel": "Shipped Game",
       "year": 2026,
-      "coverImage": "/files/images/cover/ride6.png",
-      "heroImage": "/files/images/hero/ride6.png",
+      "coverImage": "files/images/cover/ride6.png",
+      "heroImage": "files/images/hero/ride6.png",
       "role": "QA Tester, Tech QA Analyst",
       "duration": "~6 months",
       "teamSize": "~200+ (full studio)",
@@ -68,9 +68,9 @@
         }
       ],
       "color": "#e8830a",
-      "galleryFolder": "/files/images/gallery/ride6",
+      "galleryFolder": "files/images/gallery/ride6",
       "gallery": [
-        "/files/images/gallery/ride6/Ride6.jpg"
+        "files/images/gallery/ride6/Ride6.jpg"
       ]
     },
     {
@@ -81,8 +81,8 @@
       "category": "shipped",
       "categoryLabel": "Shipped Game",
       "year": 2024,
-      "coverImage": "/files/images/cover/ogu-and-the-secret-forest.png",
-      "heroImage": "/files/images/hero/ogu-and-the-secret-forest.png",
+      "coverImage": "files/images/cover/ogu-and-the-secret-forest.png",
+      "heroImage": "files/images/hero/ogu-and-the-secret-forest.png",
       "role": "QA Tester, Tech QA Analyst",
       "duration": "~6 months",
       "teamSize": "~200+ (full studio)",
@@ -101,7 +101,7 @@
       "longDescription": "PLACEHOLDER — needs your review: details for Ogu and the Secret Forest have not been confirmed against the Wix site yet. Please provide the description text from indiemanu.wixsite.com/website so this can be filled in accurately.",
       "links": [],
       "color": "#e8830a",
-      "galleryFolder": "/files/images/gallery/ogu-and-the-secret-forest",
+      "galleryFolder": "files/images/gallery/ogu-and-the-secret-forest",
       "gallery": []
     },
     {
@@ -112,8 +112,8 @@
       "category": "gamelab",
       "categoryLabel": "Game Lab",
       "year": 2024,
-      "coverImage": "/files/images/cover/narcisos-dream.png",
-      "heroImage": "/files/images/hero/narcisos-dream.png",
+      "coverImage": "files/images/cover/narcisos-dream.png",
+      "heroImage": "files/images/hero/narcisos-dream.png",
       "role": "Game Designer & Project Manager",
       "duration": "2 weeks",
       "teamSize": "17 members",
@@ -138,14 +138,14 @@
         }
       ],
       "color": "#6b3fa0",
-      "galleryFolder": "/files/images/gallery/narcisos-dream",
+      "galleryFolder": "files/images/gallery/narcisos-dream",
       "gallery": [
-        "/files/images/gallery/narcisos-dream/Credits.png",
-        "/files/images/gallery/narcisos-dream/InGame.png",
-        "/files/images/gallery/narcisos-dream/Lose screen.png",
-        "/files/images/gallery/narcisos-dream/Main Menu.png",
-        "/files/images/gallery/narcisos-dream/Map is Changing.png",
-        "/files/images/gallery/narcisos-dream/NightMare.png"
+        "files/images/gallery/narcisos-dream/Credits.png",
+        "files/images/gallery/narcisos-dream/InGame.png",
+        "files/images/gallery/narcisos-dream/Lose screen.png",
+        "files/images/gallery/narcisos-dream/Main Menu.png",
+        "files/images/gallery/narcisos-dream/Map is Changing.png",
+        "files/images/gallery/narcisos-dream/NightMare.png"
       ]
     },
     {
@@ -156,8 +156,8 @@
       "category": "gamelab",
       "categoryLabel": "Game Lab",
       "year": 2024,
-      "coverImage": "/files/images/cover/dwarfKeeper.png",
-      "heroImage": "/files/images/hero/dwarfKeeper.png",
+      "coverImage": "files/images/cover/dwarfKeeper.png",
+      "heroImage": "files/images/hero/dwarfKeeper.png",
       "role": "QA Tester",
       "duration": "~4 months",
       "teamSize": "~100+",
@@ -175,19 +175,19 @@
       "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
       "links": [],
       "color": "#7b5ea7",
-      "galleryFolder": "/files/images/gallery/dwarfkeeper",
+      "galleryFolder": "files/images/gallery/dwarfkeeper",
       "gallery": [
-        "/files/images/gallery/dwarfkeeper/Cauldron & Grill.png",
-        "/files/images/gallery/dwarfkeeper/Credits.png",
-        "/files/images/gallery/dwarfkeeper/Cut.png",
-        "/files/images/gallery/dwarfkeeper/Dialogues.png",
-        "/files/images/gallery/dwarfkeeper/Earn Money.png",
-        "/files/images/gallery/dwarfkeeper/Grill.png",
-        "/files/images/gallery/dwarfkeeper/Ingredients.png",
-        "/files/images/gallery/dwarfkeeper/MainMenu.png",
-        "/files/images/gallery/dwarfkeeper/Meet The Merchant.png",
-        "/files/images/gallery/dwarfkeeper/RecipeBook & Cutting Board.png",
-        "/files/images/gallery/dwarfkeeper/The Tavern.png"
+        "files/images/gallery/dwarfkeeper/Cauldron & Grill.png",
+        "files/images/gallery/dwarfkeeper/Credits.png",
+        "files/images/gallery/dwarfkeeper/Cut.png",
+        "files/images/gallery/dwarfkeeper/Dialogues.png",
+        "files/images/gallery/dwarfkeeper/Earn Money.png",
+        "files/images/gallery/dwarfkeeper/Grill.png",
+        "files/images/gallery/dwarfkeeper/Ingredients.png",
+        "files/images/gallery/dwarfkeeper/MainMenu.png",
+        "files/images/gallery/dwarfkeeper/Meet The Merchant.png",
+        "files/images/gallery/dwarfkeeper/RecipeBook & Cutting Board.png",
+        "files/images/gallery/dwarfkeeper/The Tavern.png"
       ]
     },
     {
@@ -198,8 +198,8 @@
       "category": "gamelab",
       "categoryLabel": "Game Lab",
       "year": 2024,
-      "coverImage": "/files/images/cover/karen-jaeger.png",
-      "heroImage": "/files/images/hero/karen-jaeger.png",
+      "coverImage": "files/images/cover/karen-jaeger.png",
+      "heroImage": "files/images/hero/karen-jaeger.png",
       "role": "Game Designer & Project Manager",
       "duration": "4 weeks",
       "teamSize": "15 members",
@@ -218,18 +218,18 @@
       "longDescription": "Karen Jaeger was built for a four-week Game Jam at Event Horizon School around the theme \"You're the Villain\". As Game Designer and Project Manager for a 15-person team, I helped shape a Beat 'em Up where the player takes on the role of a chaos-causing \"Karen\", smashing through a highly destructible retail setting, clashing with managers and police, and fighting all the way up to the supreme manager. It was a fun exercise in embracing an unlikeable protagonist and building satisfying, destructible combat encounters.",
       "links": [],
       "color": "#6b3fa0",
-      "galleryFolder": "/files/images/gallery/karen-jaeger",
+      "galleryFolder": "files/images/gallery/karen-jaeger",
       "gallery": [
-        "/files/images/gallery/karen-jaeger/Chaos.png",
-        "/files/images/gallery/karen-jaeger/Controls.png",
-        "/files/images/gallery/karen-jaeger/Credits.png",
-        "/files/images/gallery/karen-jaeger/InGame.png",
-        "/files/images/gallery/karen-jaeger/Level Design.png",
-        "/files/images/gallery/karen-jaeger/LoseScreen.png",
-        "/files/images/gallery/karen-jaeger/MainMenu.png",
-        "/files/images/gallery/karen-jaeger/Pause Menu.png",
-        "/files/images/gallery/karen-jaeger/Prologue.png",
-        "/files/images/gallery/karen-jaeger/The Mall.png"
+        "files/images/gallery/karen-jaeger/Chaos.png",
+        "files/images/gallery/karen-jaeger/Controls.png",
+        "files/images/gallery/karen-jaeger/Credits.png",
+        "files/images/gallery/karen-jaeger/InGame.png",
+        "files/images/gallery/karen-jaeger/Level Design.png",
+        "files/images/gallery/karen-jaeger/LoseScreen.png",
+        "files/images/gallery/karen-jaeger/MainMenu.png",
+        "files/images/gallery/karen-jaeger/Pause Menu.png",
+        "files/images/gallery/karen-jaeger/Prologue.png",
+        "files/images/gallery/karen-jaeger/The Mall.png"
       ]
     },
     {
@@ -240,8 +240,8 @@
       "category": "gamelab",
       "categoryLabel": "Game Lab",
       "year": 2024,
-      "coverImage": "/files/images/cover/snag-a-bug.png",
-      "heroImage": "/files/images/hero/snag-a-bug.png",
+      "coverImage": "files/images/cover/snag-a-bug.png",
+      "heroImage": "files/images/hero/snag-a-bug.png",
       "role": "Game Designer & Project Manager",
       "duration": "2 weeks",
       "teamSize": "17 members",
@@ -258,7 +258,7 @@
       "longDescription": "PLACEHOLDER — needs your review: details for Snag a Bug have not been confirmed against the Wix site yet. Please provide the description text from indiemanu.wixsite.com/website so this can be filled in accurately.",
       "links": [],
       "color": "#6b3fa0",
-      "galleryFolder": "/files/images/gallery/snag-a-bug",
+      "galleryFolder": "files/images/gallery/snag-a-bug",
       "gallery": []
     },
     {
@@ -269,8 +269,8 @@
       "category": "remake",
       "categoryLabel": "Remake",
       "year": 2024,
-      "coverImage": "/files/images/cover/hover-2024.png",
-      "heroImage": "/files/images/hero/hover-2024.png",
+      "coverImage": "files/images/cover/hover-2024.png",
+      "heroImage": "files/images/hero/hover-2024.png",
       "role": "Game Designer & Project Manager",
       "duration": "3 weeks",
       "teamSize": "18 members",
@@ -295,17 +295,17 @@
         }
       ],
       "color": "#0a84e8",
-      "galleryFolder": "/files/images/gallery/hover-2024",
+      "galleryFolder": "files/images/gallery/hover-2024",
       "gallery": [
-        "/files/images/gallery/hover-2024/Credits.png",
-        "/files/images/gallery/hover-2024/EasterEgg.png",
-        "/files/images/gallery/hover-2024/In Game Otions.png",
-        "/files/images/gallery/hover-2024/In Game.png",
-        "/files/images/gallery/hover-2024/LoseScreen.png",
-        "/files/images/gallery/hover-2024/MainMenu.png",
-        "/files/images/gallery/hover-2024/Map from Top.png",
-        "/files/images/gallery/hover-2024/Map.png",
-        "/files/images/gallery/hover-2024/PowerUps.png"
+        "files/images/gallery/hover-2024/Credits.png",
+        "files/images/gallery/hover-2024/EasterEgg.png",
+        "files/images/gallery/hover-2024/In Game Otions.png",
+        "files/images/gallery/hover-2024/In Game.png",
+        "files/images/gallery/hover-2024/LoseScreen.png",
+        "files/images/gallery/hover-2024/MainMenu.png",
+        "files/images/gallery/hover-2024/Map from Top.png",
+        "files/images/gallery/hover-2024/Map.png",
+        "files/images/gallery/hover-2024/PowerUps.png"
       ]
     },
     {
@@ -316,8 +316,8 @@
       "category": "remake",
       "categoryLabel": "Remake",
       "year": 2024,
-      "coverImage": "/files/images/cover/berty-road.png",
-      "heroImage": "/files/images/hero/berty-road.png",
+      "coverImage": "files/images/cover/berty-road.png",
+      "heroImage": "files/images/hero/berty-road.png",
       "role": "Game Designer & Project Manager",
       "duration": "4 weeks",
       "teamSize": "18 members",
@@ -336,14 +336,14 @@
       "longDescription": "Berty Road is my team's second remake at Event Horizon School, reimagining Crossy Road as a journey through time. Over four weeks with an 18-member team, I worked as Game Designer and Project Manager, shaping an endless-runner structure that carries the player through three distinct historical eras — Prehistory, the Middle Ages, and the Industrial Revolution — each with its own hazards and visual identity, plus a full set of unlockable skins including the dinosaur mascot, Bert.",
       "links": [],
       "color": "#0a84e8",
-      "galleryFolder": "/files/images/gallery/berty-road",
+      "galleryFolder": "files/images/gallery/berty-road",
       "gallery": [
-        "/files/images/gallery/berty-road/Credits.png",
-        "/files/images/gallery/berty-road/Industrial Revolution.png",
-        "/files/images/gallery/berty-road/MainMenu.png",
-        "/files/images/gallery/berty-road/Middle Age.png",
-        "/files/images/gallery/berty-road/PreHistory.png",
-        "/files/images/gallery/berty-road/Skins.png"
+        "files/images/gallery/berty-road/Credits.png",
+        "files/images/gallery/berty-road/Industrial Revolution.png",
+        "files/images/gallery/berty-road/MainMenu.png",
+        "files/images/gallery/berty-road/Middle Age.png",
+        "files/images/gallery/berty-road/PreHistory.png",
+        "files/images/gallery/berty-road/Skins.png"
       ]
     },
     {
@@ -354,8 +354,8 @@
       "category": "remake",
       "categoryLabel": "Remake",
       "year": 2024,
-      "coverImage": "/files/images/cover/descent-remake.png",
-      "heroImage": "/files/images/hero/descent-remake.png",
+      "coverImage": "files/images/cover/descent-remake.png",
+      "heroImage": "files/images/hero/descent-remake.png",
       "role": "Game Designer & Project Manager",
       "duration": "4 weeks",
       "teamSize": "15 members",
@@ -374,18 +374,18 @@
       "longDescription": "Descent Remake is the third and final remake project at Event Horizon School, reimagining the 1995 classic Descent as a first-person action-exploration experience. Across four weeks with a 15-member team, I worked as Game Designer and Project Manager, shaping a mission structure where the player infiltrates an alien-held space station, retrieves five crates scattered through its corridors, and races to destroy the core and escape before a catastrophic meltdown.",
       "links": [],
       "color": "#0a84e8",
-      "galleryFolder": "/files/images/gallery/descent-remake",
+      "galleryFolder": "files/images/gallery/descent-remake",
       "gallery": [
-        "/files/images/gallery/descent-remake/Controls.png",
-        "/files/images/gallery/descent-remake/Credits.png",
-        "/files/images/gallery/descent-remake/Destroy The Core.png",
-        "/files/images/gallery/descent-remake/Discover Powerful Weapons.png",
-        "/files/images/gallery/descent-remake/Escape Before the MeltDown.png",
-        "/files/images/gallery/descent-remake/In Game.png",
-        "/files/images/gallery/descent-remake/Lava Room.png",
-        "/files/images/gallery/descent-remake/MainMenu.png",
-        "/files/images/gallery/descent-remake/Prologue.png",
-        "/files/images/gallery/descent-remake/Retrieve The Crates.png"
+        "files/images/gallery/descent-remake/Controls.png",
+        "files/images/gallery/descent-remake/Credits.png",
+        "files/images/gallery/descent-remake/Destroy The Core.png",
+        "files/images/gallery/descent-remake/Discover Powerful Weapons.png",
+        "files/images/gallery/descent-remake/Escape Before the MeltDown.png",
+        "files/images/gallery/descent-remake/In Game.png",
+        "files/images/gallery/descent-remake/Lava Room.png",
+        "files/images/gallery/descent-remake/MainMenu.png",
+        "files/images/gallery/descent-remake/Prologue.png",
+        "files/images/gallery/descent-remake/Retrieve The Crates.png"
       ]
     },
     {
@@ -396,8 +396,8 @@
       "category": "gamejam",
       "categoryLabel": "Game Jam",
       "year": 2023,
-      "coverImage": "/files/images/cover/seedious-sam-xd.png",
-      "heroImage": "/files/images/hero/seedious-sam-xd.png",
+      "coverImage": "files/images/cover/seedious-sam-xd.png",
+      "heroImage": "files/images/hero/seedious-sam-xd.png",
       "role": "Game Designer & Team Lead",
       "duration": "48 hours",
       "teamSize": "7 members",
@@ -427,15 +427,15 @@
         }
       ],
       "color": "#2ea84a",
-      "galleryFolder": "/files/images/gallery/seedious-sam-xd",
+      "galleryFolder": "files/images/gallery/seedious-sam-xd",
       "gallery": [
-        "/files/images/gallery/seedious-sam-xd/Credits.png",
-        "/files/images/gallery/seedious-sam-xd/In Game.png",
-        "/files/images/gallery/seedious-sam-xd/MainMenu.png",
-        "/files/images/gallery/seedious-sam-xd/More Roots.png",
-        "/files/images/gallery/seedious-sam-xd/Promo.png",
-        "/files/images/gallery/seedious-sam-xd/Roots.png",
-        "/files/images/gallery/seedious-sam-xd/Win Screen.png"
+        "files/images/gallery/seedious-sam-xd/Credits.png",
+        "files/images/gallery/seedious-sam-xd/In Game.png",
+        "files/images/gallery/seedious-sam-xd/MainMenu.png",
+        "files/images/gallery/seedious-sam-xd/More Roots.png",
+        "files/images/gallery/seedious-sam-xd/Promo.png",
+        "files/images/gallery/seedious-sam-xd/Roots.png",
+        "files/images/gallery/seedious-sam-xd/Win Screen.png"
       ]
     },
     {
@@ -446,8 +446,8 @@
       "category": "gamejam",
       "categoryLabel": "Game Jam",
       "year": 2023,
-      "coverImage": "/files/images/cover/lay-down-comedy.png",
-      "heroImage": "/files/images/hero/lay-down-comedy.png",
+      "coverImage": "files/images/cover/lay-down-comedy.png",
+      "heroImage": "files/images/hero/lay-down-comedy.png",
       "role": "Game Designer",
       "duration": "48 hours",
       "teamSize": "8 members",
@@ -466,15 +466,15 @@
       "longDescription": "Lay Down Comedy was built in 48 hours at Global Game Jam 2024 in Turin, Italy, around the theme \"Make Me Laugh\". As Game Designer on an 8-person team, I helped shape this small arcade game where the player heckles a stand-up comedian by throwing whatever they can find at him, trying to win over — or shut down — the crowd's warm appreciation before he gets away with his set.",
       "links": [],
       "color": "#2ea84a",
-      "galleryFolder": "/files/images/gallery/lay-down-comedy",
+      "galleryFolder": "files/images/gallery/lay-down-comedy",
       "gallery": [
-        "/files/images/gallery/lay-down-comedy/Bouncy Rats.png",
-        "/files/images/gallery/lay-down-comedy/insegna_prova.webp",
-        "/files/images/gallery/lay-down-comedy/Level1.png",
-        "/files/images/gallery/lay-down-comedy/Original Defensive Strategies.png",
-        "/files/images/gallery/lay-down-comedy/Prologue.png",
-        "/files/images/gallery/lay-down-comedy/Throw Chairs!.png",
-        "/files/images/gallery/lay-down-comedy/Tutorial-Menu.png"
+        "files/images/gallery/lay-down-comedy/Bouncy Rats.png",
+        "files/images/gallery/lay-down-comedy/insegna_prova.webp",
+        "files/images/gallery/lay-down-comedy/Level1.png",
+        "files/images/gallery/lay-down-comedy/Original Defensive Strategies.png",
+        "files/images/gallery/lay-down-comedy/Prologue.png",
+        "files/images/gallery/lay-down-comedy/Throw Chairs!.png",
+        "files/images/gallery/lay-down-comedy/Tutorial-Menu.png"
       ]
     },
     {
@@ -485,8 +485,8 @@
       "category": "gamejam",
       "categoryLabel": "Game Jam",
       "year": 2023,
-      "coverImage": "/files/images/cover/hellivery.png",
-      "heroImage": "/files/images/hero/hellivery.png",
+      "coverImage": "files/images/cover/hellivery.png",
+      "heroImage": "files/images/hero/hellivery.png",
       "role": "Game Designer",
       "duration": "4 days",
       "teamSize": "8 members",
@@ -504,7 +504,7 @@
       "longDescription": "Hellivery was built in four days for the GMTK Game Jam 2025, around the theme \"Loop\". As Game Designer on an 8-person team, I helped shape this chaotic endless runner where the player is a delivery boy racing doughnuts through the circles of Hell, dodging strange infernal creatures to reach the lords of the underworld, who are eagerly waiting for their order.",
       "links": [],
       "color": "#2ea84a",
-      "galleryFolder": "/files/images/gallery/hellivery",
+      "galleryFolder": "files/images/gallery/hellivery",
       "gallery": []
     },
     {
@@ -515,8 +515,8 @@
       "category": "coursera",
       "categoryLabel": "Coursera Project",
       "year": 2023,
-      "coverImage": "/files/images/cover/totally-inaccurate-solar-system-simulator.png",
-      "heroImage": "/files/images/hero/totally-inaccurate-solar-system-simulator.png",
+      "coverImage": "files/images/cover/totally-inaccurate-solar-system-simulator.png",
+      "heroImage": "files/images/hero/totally-inaccurate-solar-system-simulator.png",
       "role": "Game Designer & Developer",
       "duration": "2 weeks",
       "teamSize": "Solo",
@@ -547,11 +547,11 @@
         }
       ],
       "color": "#c8860a",
-      "galleryFolder": "/files/images/gallery/totally-inaccurate-solar-system-simulator",
+      "galleryFolder": "files/images/gallery/totally-inaccurate-solar-system-simulator",
       "gallery": [
-        "/files/images/gallery/totally-inaccurate-solar-system-simulator/Comets.png",
-        "/files/images/gallery/totally-inaccurate-solar-system-simulator/Point Planets.png",
-        "/files/images/gallery/totally-inaccurate-solar-system-simulator/Scene.png"
+        "files/images/gallery/totally-inaccurate-solar-system-simulator/Comets.png",
+        "files/images/gallery/totally-inaccurate-solar-system-simulator/Point Planets.png",
+        "files/images/gallery/totally-inaccurate-solar-system-simulator/Scene.png"
       ]
     },
     {
@@ -562,8 +562,8 @@
       "category": "coursera",
       "categoryLabel": "Coursera Project",
       "year": 2023,
-      "coverImage": "/files/images/cover/proxima-the-last-stand.png",
-      "heroImage": "/files/images/hero/proxima-the-last-stand.png",
+      "coverImage": "files/images/cover/proxima-the-last-stand.png",
+      "heroImage": "files/images/hero/proxima-the-last-stand.png",
       "role": "Game Designer & Developer",
       "duration": "2 weeks",
       "teamSize": "Solo",
@@ -594,19 +594,19 @@
         }
       ],
       "color": "#c8860a",
-      "galleryFolder": "/files/images/gallery/proxima-the-last-stand",
+      "galleryFolder": "files/images/gallery/proxima-the-last-stand",
       "gallery": [
-        "/files/images/gallery/proxima-the-last-stand/Arena Prologue.png",
-        "/files/images/gallery/proxima-the-last-stand/Asteroids Rain.png",
-        "/files/images/gallery/proxima-the-last-stand/Defend Gaea.png",
-        "/files/images/gallery/proxima-the-last-stand/FullMap.png",
-        "/files/images/gallery/proxima-the-last-stand/In Game.png",
-        "/files/images/gallery/proxima-the-last-stand/InGame.png",
-        "/files/images/gallery/proxima-the-last-stand/Levels.png",
-        "/files/images/gallery/proxima-the-last-stand/Main Menu.png",
-        "/files/images/gallery/proxima-the-last-stand/Prologue.png",
-        "/files/images/gallery/proxima-the-last-stand/The Arena.png",
-        "/files/images/gallery/proxima-the-last-stand/The Black Hole.png"
+        "files/images/gallery/proxima-the-last-stand/Arena Prologue.png",
+        "files/images/gallery/proxima-the-last-stand/Asteroids Rain.png",
+        "files/images/gallery/proxima-the-last-stand/Defend Gaea.png",
+        "files/images/gallery/proxima-the-last-stand/FullMap.png",
+        "files/images/gallery/proxima-the-last-stand/In Game.png",
+        "files/images/gallery/proxima-the-last-stand/InGame.png",
+        "files/images/gallery/proxima-the-last-stand/Levels.png",
+        "files/images/gallery/proxima-the-last-stand/Main Menu.png",
+        "files/images/gallery/proxima-the-last-stand/Prologue.png",
+        "files/images/gallery/proxima-the-last-stand/The Arena.png",
+        "files/images/gallery/proxima-the-last-stand/The Black Hole.png"
       ]
     },
     {
@@ -617,8 +617,8 @@
       "category": "coursera",
       "categoryLabel": "Coursera Project",
       "year": 2023,
-      "coverImage": "/files/images/cover/tales-of-ekrund.png",
-      "heroImage": "/files/images/hero/tales-of-ekrund.png",
+      "coverImage": "files/images/cover/tales-of-ekrund.png",
+      "heroImage": "files/images/hero/tales-of-ekrund.png",
       "role": "Game Designer & Developer",
       "duration": "2 weeks",
       "teamSize": "Solo",
@@ -649,17 +649,17 @@
         }
       ],
       "color": "#c8860a",
-      "galleryFolder": "/files/images/gallery/tales-of-ekrund",
+      "galleryFolder": "files/images/gallery/tales-of-ekrund",
       "gallery": [
-        "/files/images/gallery/tales-of-ekrund/Doors & Platforms.png",
-        "/files/images/gallery/tales-of-ekrund/Enemies & PowerUps.png",
-        "/files/images/gallery/tales-of-ekrund/Levels.png",
-        "/files/images/gallery/tales-of-ekrund/LowerCaves.png",
-        "/files/images/gallery/tales-of-ekrund/MainMenu.png",
-        "/files/images/gallery/tales-of-ekrund/The Deep, Level Design.png",
-        "/files/images/gallery/tales-of-ekrund/The Deep.png",
-        "/files/images/gallery/tales-of-ekrund/Tutorial.png",
-        "/files/images/gallery/tales-of-ekrund/UnderGround.png"
+        "files/images/gallery/tales-of-ekrund/Doors & Platforms.png",
+        "files/images/gallery/tales-of-ekrund/Enemies & PowerUps.png",
+        "files/images/gallery/tales-of-ekrund/Levels.png",
+        "files/images/gallery/tales-of-ekrund/LowerCaves.png",
+        "files/images/gallery/tales-of-ekrund/MainMenu.png",
+        "files/images/gallery/tales-of-ekrund/The Deep, Level Design.png",
+        "files/images/gallery/tales-of-ekrund/The Deep.png",
+        "files/images/gallery/tales-of-ekrund/Tutorial.png",
+        "files/images/gallery/tales-of-ekrund/UnderGround.png"
       ]
     },
     {
@@ -670,8 +670,8 @@
       "category": "other",
       "categoryLabel": "University Project",
       "year": 2023,
-      "coverImage": "/files/images/cover/athena.png",
-      "heroImage": "/files/images/hero/athena.png",
+      "coverImage": "files/images/cover/athena.png",
+      "heroImage": "files/images/hero/athena.png",
       "role": "Game Designer & Developer",
       "duration": "2 weeks",
       "teamSize": "10 members",
@@ -697,18 +697,18 @@
         }
       ],
       "color": "#e83838",
-      "galleryFolder": "/files/images/gallery/athena",
+      "galleryFolder": "files/images/gallery/athena",
       "gallery": [
-        "/files/images/gallery/athena/Abilities.png",
-        "/files/images/gallery/athena/Cooperation.png",
-        "/files/images/gallery/athena/Credits.png",
-        "/files/images/gallery/athena/Destroy.png",
-        "/files/images/gallery/athena/Ending Screen.png",
-        "/files/images/gallery/athena/Fight.png",
-        "/files/images/gallery/athena/Lobby.png",
-        "/files/images/gallery/athena/LobbyMenu.png",
-        "/files/images/gallery/athena/Main Menu.png",
-        "/files/images/gallery/athena/TrapDoors.png"
+        "files/images/gallery/athena/Abilities.png",
+        "files/images/gallery/athena/Cooperation.png",
+        "files/images/gallery/athena/Credits.png",
+        "files/images/gallery/athena/Destroy.png",
+        "files/images/gallery/athena/Ending Screen.png",
+        "files/images/gallery/athena/Fight.png",
+        "files/images/gallery/athena/Lobby.png",
+        "files/images/gallery/athena/LobbyMenu.png",
+        "files/images/gallery/athena/Main Menu.png",
+        "files/images/gallery/athena/TrapDoors.png"
       ]
     },
     {
@@ -719,8 +719,8 @@
       "category": "other",
       "categoryLabel": "Solo Project",
       "year": 2023,
-      "coverImage": "/files/images/cover/the-hike.png",
-      "heroImage": "/files/images/hero/the-hike.png",
+      "coverImage": "files/images/cover/the-hike.png",
+      "heroImage": "files/images/hero/the-hike.png",
       "role": "Game Designer & Developer",
       "duration": "1 week",
       "teamSize": "Solo",
@@ -739,16 +739,16 @@
       "longDescription": "The Hike is a solo exam project at Event Horizon School: a single 3D puzzle-platformer level built end-to-end by me in one week, under the self-imposed constraint of relying on just one simple script. The level chains together environmental puzzles, parkour sections and teleporters — including a playful nod to Monkey Island — all building toward a golden orb that marks the finish. It was a focused exercise in level design and problem-solving within a tight technical constraint.",
       "links": [],
       "color": "#e83838",
-      "galleryFolder": "/files/images/gallery/the-hike",
+      "galleryFolder": "files/images/gallery/the-hike",
       "gallery": [
-        "/files/images/gallery/the-hike/AllLevel.png",
-        "/files/images/gallery/the-hike/CutScene.png",
-        "/files/images/gallery/the-hike/Last Section.png",
-        "/files/images/gallery/the-hike/Logs!.png",
-        "/files/images/gallery/the-hike/Monkey Island.png",
-        "/files/images/gallery/the-hike/Parkour.png",
-        "/files/images/gallery/the-hike/Portals.png",
-        "/files/images/gallery/the-hike/Start.png"
+        "files/images/gallery/the-hike/AllLevel.png",
+        "files/images/gallery/the-hike/CutScene.png",
+        "files/images/gallery/the-hike/Last Section.png",
+        "files/images/gallery/the-hike/Logs!.png",
+        "files/images/gallery/the-hike/Monkey Island.png",
+        "files/images/gallery/the-hike/Parkour.png",
+        "files/images/gallery/the-hike/Portals.png",
+        "files/images/gallery/the-hike/Start.png"
       ]
     },
     {
@@ -759,8 +759,8 @@
       "category": "other",
       "categoryLabel": "Solo Project",
       "year": 2023,
-      "coverImage": "/files/images/cover/waters-grave.png",
-      "heroImage": "/files/images/hero/waters-grave.png",
+      "coverImage": "files/images/cover/waters-grave.png",
+      "heroImage": "files/images/hero/waters-grave.png",
       "role": "Game Designer & Developer",
       "duration": "1 week",
       "teamSize": "Solo",
@@ -779,15 +779,15 @@
       "longDescription": "Water's Grave is my Level Design exam project at Event Horizon School: a full playable level I built solo, in one week, based on a concept created by a classmate. The level is set in Tiba Settlement, an abandoned outpost buried in the Dry Basin desert, where the player uses a jetpack to scale the tallest buildings, hunt down every tap scattered across town, and finally release the water from the cistern to complete the level.",
       "links": [],
       "color": "#e83838",
-      "galleryFolder": "/files/images/gallery/waters-grave",
+      "galleryFolder": "files/images/gallery/waters-grave",
       "gallery": [
-        "/files/images/gallery/waters-grave/CutScene.png",
-        "/files/images/gallery/waters-grave/MainMenu.png",
-        "/files/images/gallery/waters-grave/Release The Water.png",
-        "/files/images/gallery/waters-grave/Start.png",
-        "/files/images/gallery/waters-grave/Taps.png",
-        "/files/images/gallery/waters-grave/The Last Tap.png",
-        "/files/images/gallery/waters-grave/Tiba Settlement.png"
+        "files/images/gallery/waters-grave/CutScene.png",
+        "files/images/gallery/waters-grave/MainMenu.png",
+        "files/images/gallery/waters-grave/Release The Water.png",
+        "files/images/gallery/waters-grave/Start.png",
+        "files/images/gallery/waters-grave/Taps.png",
+        "files/images/gallery/waters-grave/The Last Tap.png",
+        "files/images/gallery/waters-grave/Tiba Settlement.png"
       ]
     }
   ],
