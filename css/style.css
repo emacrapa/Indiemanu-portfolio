@@ -504,6 +504,14 @@ body::after {
   margin-bottom: 1.5rem;
 }
 .about-mini-text h2 span { color: var(--accent); }
+.about-mini-kicker {
+  font-family: var(--pixel);
+  font-size: 9px;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
+}
 .about-mini-text p {
   color: var(--text-muted);
   margin-bottom: 1rem;
