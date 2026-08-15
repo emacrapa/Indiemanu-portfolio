@@ -44,7 +44,14 @@
       ],
       "color": "#e8830a",
       "galleryFolder": "files/images/gallery/motogp25",
-      "gallery": []
+      "gallery": [
+        "files/images/gallery/motogp25/Head to Head.png",
+        "files/images/gallery/motogp25/Minibikes.png",
+        "files/images/gallery/motogp25/Mugello.png",
+        "files/images/gallery/motogp25/Off Road.png",
+        "files/images/gallery/motogp25/Rain Tires.png",
+        "files/images/gallery/motogp25/Starting Grid.png"
+      ]
     },
     {
       "id": "ride6",
@@ -89,7 +96,12 @@
       "color": "#e8830a",
       "galleryFolder": "files/images/gallery/ride6",
       "gallery": [
-        "files/images/gallery/ride6/Ride6.jpg"
+        "files/images/gallery/ride6/Baggers.png",
+        "files/images/gallery/ride6/Champions.png",
+        "files/images/gallery/ride6/Gunma.png",
+        "files/images/gallery/ride6/Japan Circuit.png",
+        "files/images/gallery/ride6/Kapadokia.png",
+        "files/images/gallery/ride6/Off Road.png"
       ]
     },
     {
@@ -132,7 +144,15 @@
       ],
       "color": "#e8830a",
       "galleryFolder": "files/images/gallery/ogu-and-the-secret-forest",
-      "gallery": []
+      "gallery": [
+        "files/images/gallery/ogu-and-the-secret-forest/Desert.png",
+        "files/images/gallery/ogu-and-the-secret-forest/Environment.png",
+        "files/images/gallery/ogu-and-the-secret-forest/Macetus.png",
+        "files/images/gallery/ogu-and-the-secret-forest/Monkey Statue.png",
+        "files/images/gallery/ogu-and-the-secret-forest/Puzzle Game.png",
+        "files/images/gallery/ogu-and-the-secret-forest/Spring & Falls.png",
+        "files/images/gallery/ogu-and-the-secret-forest/The City.png"
+      ]
     },
     {
       "id": "hotwheels-infinite-rush",
@@ -160,8 +180,8 @@
         "Racing",
         "Milestone"
       ],
-      "description": "",
-      "longDescription": "",
+      "description": "Third consecutive Milestone title — reviewed HOT WHEELS Infinite Rush through platform certification for PS5, Xbox and Switch 2 on a one-month deadline.",
+      "longDescription": "HOT WHEELS Infinite Rush was my third title delivered at Milestone. During the submission phase, I helped review the project alongside my colleagues to ensure compliance with certification guidelines across PS5, Xbox and Switch 2, securing approval on every platform. The project ran on a tight one-month timeline, and delivering it under that pressure was a real team effort.",
       "links": [
         {
           "label": "Steam Page",
@@ -176,7 +196,15 @@
       ],
       "color": "#e8830a",
       "galleryFolder": "files/images/gallery/hotwheels-infinite-rush",
-      "gallery": []
+      "gallery": [
+        "files/images/gallery/hotwheels-infinite-rush/Crocodile.png",
+        "files/images/gallery/hotwheels-infinite-rush/Daredevil.png",
+        "files/images/gallery/hotwheels-infinite-rush/Duck Car.png",
+        "files/images/gallery/hotwheels-infinite-rush/Kong.png",
+        "files/images/gallery/hotwheels-infinite-rush/Octopus.png",
+        "files/images/gallery/hotwheels-infinite-rush/The Beach.png",
+        "files/images/gallery/hotwheels-infinite-rush/Wheelswood.png"
+      ]
     },
     {
       "id": "narcisos-dream",
@@ -247,10 +275,12 @@
       "tags": [
         "Game Design",
         "Project Management",
-        "Testing"
+        "Simulation",
+        "Management",
+        "Unity"
       ],
-      "description": "My first project at Milestone as a QA Tester. I contributed to functional testing and quality assurance, helping the title reach certification successfully.",
-      "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
+      "description": "A cooking-sim-style tavern management game with dialogue-driven dwarf customers, light RPG choices, and supply-chain juggling — my first-year Game Design capstone.",
+      "longDescription": "DwarfKeeper was the final project of my first year on the Game Design course at Event Horizon School. I led a large team in building an inn simulator with cooking-sim-style mechanics, meaningful dialogue with customers — dwarves from all over the kingdom — and a touch of RPG choice-driven storytelling during bar conversations. You'll also need to manage the tavern's finances, keeping the pantry stocked with enough supplies to get through the day. Immerse yourself in the vibrant life of the tavern and uncover every secret the dwarves have to tell.",
       "links": [
         {
           "label": "Download Build",
@@ -352,10 +382,12 @@
       "tags": [
         "Game Design",
         "Project Management",
+        "Mobile",
+        "Puzzle",
         "Unity"
       ],
-      "description": "PLACEHOLDER — needs your review: a GameLab project built at Event Horizon School. (Not yet verified against the Wix site — please replace with the real project details.)",
-      "longDescription": "PLACEHOLDER — needs your review: details for Snag a Bug have not been confirmed against the Wix site yet. Please provide the description text from indiemanu.wixsite.com/website so this can be filled in accurately.",
+      "description": "A cartoon-style mobile puzzle game inspired by Push Sushi — 39 move-based levels, a star-rating system, and unlockable beetle skins.",
+      "longDescription": "During this GameLab, my team developed a mobile puzzle game heavily inspired by the classic Push Sushi. With a reimagined theme, a cartoon art style, and 39 levels of increasing difficulty and varied mechanics, Snag a Bug offers light-hearted, bite-sized fun. Every level has been tested and balanced around a star-rating system based on how many moves you use — the more stars you earn, the more skins you unlock. Discover all the beetles on offer and help them escape their burrow.",
       "links": [
         {
           "label": "Download Build",
@@ -365,7 +397,15 @@
       ],
       "color": "#6b3fa0",
       "galleryFolder": "files/images/gallery/snag-a-bug",
-      "gallery": []
+      "gallery": [
+        "files/images/gallery/snag-a-bug/Credits.png",
+        "files/images/gallery/snag-a-bug/Gameplay Level.png",
+        "files/images/gallery/snag-a-bug/Level Selection.png",
+        "files/images/gallery/snag-a-bug/Main Menu.png",
+        "files/images/gallery/snag-a-bug/Title Screen.png",
+        "files/images/gallery/snag-a-bug/Tutorial.png",
+        "files/images/gallery/snag-a-bug/Unlock Skins.png"
+      ]
     },
     {
       "id": "hover-2024",
