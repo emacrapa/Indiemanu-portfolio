@@ -697,7 +697,7 @@ function resetTheme() {
 }
 
 function linkIcon(type) {
-  const icons = { steam: '🎮', itch: '🕹️', download: '⬇️', github: '💻', url: '🔗' };
+  const icons = { steam: '🎮', itch: '🕹️', download: '⬇️', github: '💻', youtube: '📺', url: '🔗' };
   return icons[type] || '🔗';
 }
 

@@ -35,6 +35,11 @@
           "label": "Steam Page",
           "url": "https://store.steampowered.com/app/3077390/MotoGP25/",
           "icon": "steam"
+        },
+        {
+          "label": "Watch Trailer",
+          "url": "https://www.youtube.com/watch?v=EQPXbsnBhEY",
+          "icon": "youtube"
         }
       ],
       "color": "#e8830a",
@@ -74,6 +79,11 @@
           "label": "Steam Page",
           "url": "https://store.steampowered.com/app/2815070/RIDE_6/",
           "icon": "steam"
+        },
+        {
+          "label": "Watch Trailer",
+          "url": "https://www.youtube.com/watch?v=jq15PBniHL8",
+          "icon": "youtube"
         }
       ],
       "color": "#e8830a",
@@ -152,6 +162,11 @@
           "label": "Steam Page",
           "url": "https://store.steampowered.com/app/2821390/HOT_WHEELS_Infinite_Rush/",
           "icon": "steam"
+        },
+        {
+          "label": "Watch Trailer",
+          "url": "https://www.youtube.com/watch?v=JUZD3j1HY_4",
+          "icon": "youtube"
         }
       ],
       "color": "#e8830a",
@@ -185,6 +200,11 @@
       "description": "In this first completely free-themed GameLab, we tried to develop a Top-Down Arena featuring dynamic combat and a dreamlike setting, with the assets changing from a dream version to a nightmare version as the game progresses and the player takes damage. Will you manage not to get trapped in the nightmare?",
       "longDescription": "Narciso's Dream was the first GameLab project at Event Horizon School — a two-week sprint with no fixed theme, giving our 17-person team full creative freedom. I took on the dual role of Game Designer and Project Manager, defining the core loop of a Top-Down Arena where the visual aesthetic shifts dynamically between a dreamy, peaceful state and a dark nightmare as the player takes damage. Managing a team of this size under tight deadlines taught me how to balance creative ambition with pragmatic scoping.",
       "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/narcisos-dream",
+          "icon": "itch"
+        },
         {
           "label": "Pitch Deck (PDF)",
           "url": "files/pitches/Pitch%20Narciso's%20Dream.pdf",
@@ -227,6 +247,11 @@
       "description": "My first project at Milestone as a QA Tester. I contributed to functional testing and quality assurance, helping the title reach certification successfully.",
       "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
       "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/dwarfkeeper",
+          "icon": "itch"
+        },
         {
           "label": "Pitch Deck (PDF)",
           "url": "files/pitches/Pitch%20DwarfKeeper.pdf",
@@ -277,6 +302,11 @@
       "longDescription": "Karen Jaeger was built for a four-week Game Jam at Event Horizon School around the theme \"You're the Villain\". As Game Designer and Project Manager for a 15-person team, I helped shape a Beat 'em Up where the player takes on the role of a chaos-causing \"Karen\", smashing through a highly destructible retail setting, clashing with managers and police, and fighting all the way up to the supreme manager. It was a fun exercise in embracing an unlikeable protagonist and building satisfying, destructible combat encounters.",
       "links": [
         {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/karen-jaeger",
+          "icon": "itch"
+        },
+        {
           "label": "Pitch Deck (PDF)",
           "url": "files/pitches/Pitch%20Karen%20Jaeger.pdf",
           "icon": "download"
@@ -324,6 +354,11 @@
       "links": [
         {
           "label": "Download Build",
+          "url": "https://indiemanu.itch.io/snag-a-bug",
+          "icon": "itch"
+        },
+        {
+          "label": "Download Build",
           "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
           "icon": "download"
         },
@@ -363,7 +398,13 @@
       ],
       "description": "This remake of Hover was the first team project done at Event Horizon School during January 2024. The remake is a faithful reproduction of the famous 1995 game, in a revamped graphic design. Capture all the blue flags before the enemies manage to capture the red ones!",
       "longDescription": "The Hover Remake was my team's first project at Event Horizon School — a faithful reimagining of the classic 1995 Windows game, rebuilt in Unity with a fresh visual identity. Over three weeks with an 18-member team, I coordinated game design decisions and production flow, ensuring we preserved what made the original charming while modernising the look and feel. This project laid the foundation for how I approach team leadership in game development.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/hover-2024",
+          "icon": "itch"
+        }
+      ],
       "color": "#0a84e8",
       "galleryFolder": "files/images/gallery/hover-2024",
       "gallery": [
@@ -404,7 +445,13 @@
       ],
       "description": "The second remake project at Event Horizon School — this time of the much more modern Crossy Road. Travel through three historical eras in this time-hopping reinterpretation of the endless runner, unlock every skin, and play as Bert the dinosaur!",
       "longDescription": "Berty Road is my team's second remake at Event Horizon School, reimagining Crossy Road as a journey through time. Over four weeks with an 18-member team, I worked as Game Designer and Project Manager, shaping an endless-runner structure that carries the player through three distinct historical eras — Prehistory, the Middle Ages, and the Industrial Revolution — each with its own hazards and visual identity, plus a full set of unlockable skins including the dinosaur mascot, Bert.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/berty-road",
+          "icon": "itch"
+        }
+      ],
       "color": "#0a84e8",
       "galleryFolder": "files/images/gallery/berty-road",
       "gallery": [
@@ -442,7 +489,13 @@
       ],
       "description": "The third and final remake at Event Horizon School, reinterpreting the 1995 classic Descent. Travel the corridors of an alien-held space base, retrieve five crates, destroy the station's core, and escape before the meltdown consumes everything.",
       "longDescription": "Descent Remake is the third and final remake project at Event Horizon School, reimagining the 1995 classic Descent as a first-person action-exploration experience. Across four weeks with a 15-member team, I worked as Game Designer and Project Manager, shaping a mission structure where the player infiltrates an alien-held space station, retrieves five crates scattered through its corridors, and races to destroy the core and escape before a catastrophic meltdown.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/descent-remake",
+          "icon": "itch"
+        }
+      ],
       "color": "#0a84e8",
       "galleryFolder": "files/images/gallery/descent-remake",
       "gallery": [
@@ -489,6 +542,11 @@
           "label": "itch.io Page",
           "url": "https://liberiarcano.itch.io/seedious-sam-xd-the-last-farmer",
           "icon": "itch"
+        },
+        {
+          "label": "Watch Trailer",
+          "url": "https://www.youtube.com/watch?v=eUwd7kWEX94",
+          "icon": "youtube"
         }
       ],
       "color": "#2ea84a",
@@ -529,7 +587,13 @@
       ],
       "description": "Developed during Global Game Jam 2024 in Turin, from the theme \"Make Me Laugh\", Lay Down Comedy is a small arcade game where you face off against a stand-up comedian with a sharp — but not always effective — wit. Pelt him with whatever you can find and don't let him get away with it!",
       "longDescription": "Lay Down Comedy was built in 48 hours at Global Game Jam 2024 in Turin, Italy, around the theme \"Make Me Laugh\". As Game Designer on an 8-person team, I helped shape this small arcade game where the player heckles a stand-up comedian by throwing whatever they can find at him, trying to win over — or shut down — the crowd's warm appreciation before he gets away with his set.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/lay-down-comedy",
+          "icon": "itch"
+        }
+      ],
       "color": "#2ea84a",
       "galleryFolder": "files/images/gallery/lay-down-comedy",
       "gallery": [
@@ -567,7 +631,13 @@
       ],
       "description": "Developed during the GMTK Game Jam 2025, from the theme \"Loop\", Hellivery is a chaotic endless runner where you play a delivery boy dropping off doughnuts through the circles of Hell — dodging hellish creatures on the way to the lords of the underworld, who are just waiting for their order.",
       "longDescription": "Hellivery was built in four days for the GMTK Game Jam 2025, around the theme \"Loop\". As Game Designer on an 8-person team, I helped shape this chaotic endless runner where the player is a delivery boy racing doughnuts through the circles of Hell, dodging strange infernal creatures to reach the lords of the underworld, who are eagerly waiting for their order.",
-      "links": [],
+      "links": [
+        {
+          "label": "itch.io Page",
+          "url": "https://be-proud-be-silly.itch.io/hellivery",
+          "icon": "itch"
+        }
+      ],
       "color": "#2ea84a",
       "galleryFolder": "files/images/gallery/hellivery",
       "gallery": []
@@ -740,6 +810,11 @@
       "longDescription": "Athena was developed during the Online Game Design course at the University of Milan, themed around the institution's centenary. Ten of us built an online co-op puzzle platformer where three players select different ability classes and collaborate to defeat Athena — an AI villain who has seized control of the university. The project was a deep dive into multiplayer architecture in Unity and the design challenges of building mechanics that require genuine cooperation.",
       "links": [
         {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/athena",
+          "icon": "itch"
+        },
+        {
           "label": "Pitch Deck (PDF)",
           "url": "files/pitches/Pitch%20ATHENA.pdf",
           "icon": "download"
@@ -786,7 +861,13 @@
       ],
       "description": "A 3D puzzle platformer level built solo for an exam at Event Horizon School, made under the constraint of using a single simple script. Traverse sections of parkour and teleporters — with a nod to Monkey Island — to reach the golden orb marking the end of the level.",
       "longDescription": "The Hike is a solo exam project at Event Horizon School: a single 3D puzzle-platformer level built end-to-end by me in one week, under the self-imposed constraint of relying on just one simple script. The level chains together environmental puzzles, parkour sections and teleporters — including a playful nod to Monkey Island — all building toward a golden orb that marks the finish. It was a focused exercise in level design and problem-solving within a tight technical constraint.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/the-hike",
+          "icon": "itch"
+        }
+      ],
       "color": "#e83838",
       "galleryFolder": "files/images/gallery/the-hike",
       "gallery": [
@@ -826,7 +907,13 @@
       ],
       "description": "A playable level built solo for the Level Design exam at Event Horizon School, based on a classmate's concept. Explore Tiba Settlement, an abandoned outpost in the Dry Basin desert — use a jetpack to reach the tallest buildings, open every tap, and release the water from the cistern.",
       "longDescription": "Water's Grave is my Level Design exam project at Event Horizon School: a full playable level I built solo, in one week, based on a concept created by a classmate. The level is set in Tiba Settlement, an abandoned outpost buried in the Dry Basin desert, where the player uses a jetpack to scale the tallest buildings, hunt down every tap scattered across town, and finally release the water from the cistern to complete the level.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://indiemanu.itch.io/waters-grave",
+          "icon": "itch"
+        }
+      ],
       "color": "#e83838",
       "galleryFolder": "files/images/gallery/waters-grave",
       "gallery": [
