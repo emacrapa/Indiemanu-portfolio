@@ -13,11 +13,14 @@
       "role": "QA Tester",
       "duration": "~6 months",
       "teamSize": "~200+ (full studio)",
-      "engine": "Proprietary",
+      "engine": "Unreal Engine",
       "platform": [
         "PC",
+        "PS4",
         "PS5",
-        "Xbox Series X/S"
+        "Xbox One",
+        "Xbox Series X/S",
+        "Switch"
       ],
       "tags": [
         "QA",
@@ -27,7 +30,13 @@
       ],
       "description": "On my first project at Milestone, I was responsible for carrying out thorough testing of motorcycles and tracks for the MotoGP 25 title, culminating in a successful multi-platform submission and the release of a highly acclaimed title in the racing simulation genre.",
       "longDescription": "MotoGP 25 was my first project at Milestone S.r.l., where I joined the QA team to test motorcycles and tracks across the full roster of the official MotoGP simulation. My work covered functional testing of vehicles, circuits and game content, helping the team catch and resolve issues ahead of certification. The project reached a successful multi-platform submission and shipped internationally to strong critical reception — a first taste of AAA QA work at scale.",
-      "links": [],
+      "links": [
+        {
+          "label": "Steam Page",
+          "url": "https://store.steampowered.com/app/3077390/MotoGP25/",
+          "icon": "steam"
+        }
+      ],
       "color": "#e8830a",
       "galleryFolder": "files/images/gallery/motogp25",
       "gallery": []
@@ -45,7 +54,7 @@
       "role": "QA Tester, Tech QA Analyst",
       "duration": "~6 months",
       "teamSize": "~200+ (full studio)",
-      "engine": "Proprietary",
+      "engine": "Unreal Engine",
       "platform": [
         "PC",
         "PS5",
@@ -77,16 +86,16 @@
       "id": "ogu-and-the-secret-forest",
       "slug": "ogu-and-the-secret-forest",
       "title": "Ogu and the Secret Forest",
-      "subtitle": "Milestone S.r.l. — AAA Motorcycle Racing",
+      "subtitle": "Moonlab Studio",
       "category": "shipped",
       "categoryLabel": "Shipped Game",
       "year": 2024,
       "coverImage": "files/images/cover/ogu-and-the-secret-forest.png",
       "heroImage": "files/images/hero/ogu-and-the-secret-forest.png",
-      "role": "QA Tester, Tech QA Analyst",
-      "duration": "~6 months",
-      "teamSize": "~200+ (full studio)",
-      "engine": "Proprietary",
+      "role": "QA Tester, Italian LQA",
+      "duration": "~2 months",
+      "teamSize": "~50+ (full studio)",
+      "engine": "Unreal Engine",
       "platform": [
         "PC",
         "PS5",
@@ -94,12 +103,57 @@
       ],
       "tags": [
         "QA",
-        "Milestone",
-        "Tech QA"
+        "Moonlab",
+        "LQA"
       ],
-      "description": "PLACEHOLDER — needs your review: at Milestone, I contributed QA testing to Ogu and the Secret Forest, helping the title pass certification and reach international release. (Not yet verified against the Wix site — please replace with the real project details.)",
-      "longDescription": "PLACEHOLDER — needs your review: details for Ogu and the Secret Forest have not been confirmed against the Wix site yet. Please provide the description text from indiemanu.wixsite.com/website so this can be filled in accurately.",
-      "links": [],
+      "description": "In my first role as a tester at a major video game studio, I worked in collaboration with Moonlab Game Studios on the development of *Ogu and The Secret Forest*, handling both the game’s QA and the LQA for the Italian localisation. This resulted in a fully reviewed and playable product that has been a huge success on the indie scene",
+      "longDescription": "In my first role as a tester at a major video game studio, I worked in collaboration with Moonlab Game Studios on the development of *Ogu and The Secret Forest*, handling both the game’s QA and the LQA for the Italian localisation. This resulted in a fully reviewed and playable product that has been a huge success on the indie scene",
+      "links": [
+        {
+          "label": "Steam Page",
+          "url": "https://store.steampowered.com/app/1985960/Ogu_and_the_secret_forest/",
+          "icon": "steam"
+        }
+      ],
+      "color": "#e8830a",
+      "galleryFolder": "files/images/gallery/ogu-and-the-secret-forest",
+      "gallery": []
+    },
+    {
+      "id": "hotwheels-infinite-rush",
+      "slug": "hotwheels-infinite-rush",
+      "title": "Hotwheels Infinite Rush",
+      "subtitle": "Milestone S.r.l. — AAA Motorcycle Racing",
+      "category": "shipped",
+      "categoryLabel": "Shipped Game",
+      "year": 2026,
+      "coverImage": "files/images/cover/hotwheels-infinite-rush.png",
+      "heroImage": "files/images/hero/hotwheels-infinite-rush.png",
+      "role": "QA Tester",
+      "duration": "~1 month",
+      "teamSize": "~200+ (full studio)",
+      "engine": "Unreal Engine",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox Series X/S",
+        "Switch 2"
+      ],
+      "tags": [
+        "QA",
+        "AAA",
+        "Racing",
+        "Milestone"
+      ],
+      "description": "",
+      "longDescription": "",
+      "links": [
+        {
+          "label": "Steam Page",
+          "url": "https://store.steampowered.com/app/2821390/HOT_WHEELS_Infinite_Rush/",
+          "icon": "steam"
+        }
+      ],
       "color": "#e8830a",
       "galleryFolder": "files/images/gallery/ogu-and-the-secret-forest",
       "gallery": []
@@ -135,6 +189,11 @@
           "label": "Download Build",
           "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
           "icon": "download"
+        },
+        {
+          "label": "Download Pitch",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
         }
       ],
       "color": "#6b3fa0",
@@ -158,22 +217,32 @@
       "year": 2024,
       "coverImage": "files/images/cover/dwarfKeeper.png",
       "heroImage": "files/images/hero/dwarfKeeper.png",
-      "role": "QA Tester",
-      "duration": "~4 months",
-      "teamSize": "~100+",
-      "engine": "Proprietary",
+      "role": "Game Designer & Project Manager",
+      "duration": "6 weeks",
+      "teamSize": "16 members",
+      "engine": "Unity",
       "platform": [
-        "PC",
-        "Console"
+        "PC"
       ],
       "tags": [
-        "QA",
-        "Milestone",
+        "Game Design",
+        "Project Management",
         "Testing"
       ],
       "description": "My first project at Milestone as a QA Tester. I contributed to functional testing and quality assurance, helping the title reach certification successfully.",
       "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        },
+        {
+          "label": "Download Pitch",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        }
+      ],
       "color": "#7b5ea7",
       "galleryFolder": "files/images/gallery/dwarfkeeper",
       "gallery": [
@@ -216,7 +285,18 @@
       ],
       "description": "Developed for a Game Jam themed \"You're the Villain\", Karen Jaeger is a Beat 'em Up where you play as a stereotypical entitled \"Karen\" — turn a fully destructible setting upside down, put managers and police in their place, and resist until you face the store's supreme manager.",
       "longDescription": "Karen Jaeger was built for a four-week Game Jam at Event Horizon School around the theme \"You're the Villain\". As Game Designer and Project Manager for a 15-person team, I helped shape a Beat 'em Up where the player takes on the role of a chaos-causing \"Karen\", smashing through a highly destructible retail setting, clashing with managers and police, and fighting all the way up to the supreme manager. It was a fun exercise in embracing an unlikeable protagonist and building satisfying, destructible combat encounters.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        },
+        {
+          "label": "Download Pitch",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        }
+      ],
       "color": "#6b3fa0",
       "galleryFolder": "files/images/gallery/karen-jaeger",
       "gallery": [
@@ -256,7 +336,18 @@
       ],
       "description": "PLACEHOLDER — needs your review: a GameLab project built at Event Horizon School. (Not yet verified against the Wix site — please replace with the real project details.)",
       "longDescription": "PLACEHOLDER — needs your review: details for Snag a Bug have not been confirmed against the Wix site yet. Please provide the description text from indiemanu.wixsite.com/website so this can be filled in accurately.",
-      "links": [],
+      "links": [
+        {
+          "label": "Download Build",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        },
+        {
+          "label": "Download Pitch",
+          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "icon": "download"
+        }
+      ],
       "color": "#6b3fa0",
       "galleryFolder": "files/images/gallery/snag-a-bug",
       "gallery": []
@@ -677,8 +768,7 @@
       "teamSize": "10 members",
       "engine": "Unity",
       "platform": [
-        "PC",
-        "Online Multiplayer"
+        "PC"
       ],
       "tags": [
         "Online Multiplayer",
