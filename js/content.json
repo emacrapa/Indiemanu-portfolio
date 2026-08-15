@@ -1,7 +1,7 @@
 {
   "homeExperience": [
     {
-      "year": "2023 – PRESENT",
+      "year": "2025 – PRESENT",
       "role": "QA Tester & Tech QA Analyst",
       "org": "Milestone S.r.l. · Milan, Italy"
     },
@@ -11,36 +11,81 @@
       "org": "Event Horizon School · Milan"
     },
     {
-      "year": "2022 – 2023",
+      "year": "2023",
       "role": "Game Design & Development",
       "org": "Coursera · Michigan State University"
     }
   ],
-
   "homeSkills": [
-    { "icon": "🎮", "name": "Game Design",    "lvl": "EXPERT" },
-    { "icon": "🔍", "name": "QA Testing",     "lvl": "EXPERT" },
-    { "icon": "📋", "name": "Project Mgmt",   "lvl": "ADV"    },
-    { "icon": "🎲", "name": "Unity",           "lvl": "ADV"    },
-    { "icon": "💻", "name": "C#",              "lvl": "MID"    },
-    { "icon": "🌐", "name": "Online Design",  "lvl": "ADV"    },
-    { "icon": "🔧", "name": "Tech QA",        "lvl": "ADV"    },
-    { "icon": "🤝", "name": "Team Lead",      "lvl": "ADV"    },
-    { "icon": "📝", "name": "Level Design",   "lvl": "ADV"    },
-    { "icon": "🎭", "name": "Narrative Des.", "lvl": "MID"    },
-    { "icon": "📊", "name": "Metrics & KPI",  "lvl": "MID"    },
-    { "icon": "🗺️", "name": "Jira / Zephyr",  "lvl": "ADV"    }
+    {
+      "icon": "🎮",
+      "name": "Game Design",
+      "lvl": "EXPERT"
+    },
+    {
+      "icon": "🔍",
+      "name": "QA Testing",
+      "lvl": "EXPERT"
+    },
+    {
+      "icon": "📋",
+      "name": "Project Mgmt",
+      "lvl": "ADV"
+    },
+    {
+      "icon": "🎲",
+      "name": "Unity",
+      "lvl": "ADV"
+    },
+    {
+      "icon": "💻",
+      "name": "C#",
+      "lvl": "MID"
+    },
+    {
+      "icon": "🌐",
+      "name": "Online Design",
+      "lvl": "ADV"
+    },
+    {
+      "icon": "🔧",
+      "name": "Tech QA",
+      "lvl": "ADV"
+    },
+    {
+      "icon": "🤝",
+      "name": "Team Lead",
+      "lvl": "ADV"
+    },
+    {
+      "icon": "📝",
+      "name": "Level Design",
+      "lvl": "ADV"
+    },
+    {
+      "icon": "🎭",
+      "name": "Narrative Des.",
+      "lvl": "MID"
+    },
+    {
+      "icon": "📊",
+      "name": "Metrics & KPI",
+      "lvl": "MID"
+    },
+    {
+      "icon": "🗺️",
+      "name": "Jira / Zephyr",
+      "lvl": "ADV"
+    }
   ],
-
   "aboutWork": [
     {
-      "year": "2023 – PRESENT",
+      "year": "2025 – PRESENT",
       "role": "QA Tester & Tech QA Analyst",
       "org": "Milestone S.r.l. · Milan, Italy",
       "desc": "Working on AAA motorcycle racing titles (RIDE series). Responsible for functional testing, performance testing, writing test cases, and ensuring certification passes. Developed skills as Tech QA Analyst handling analytics and platform-specific testing."
     }
   ],
-
   "aboutEducation": [
     {
       "year": "2023 – 2026",
@@ -49,38 +94,70 @@
       "desc": "Three-year program covering game design theory, production pipelines, team development, and practical GameLab projects with teams of 14–18 people."
     },
     {
-      "year": "2022 – 2023",
+      "year": "2023",
       "role": "Game Design & Development Specialization",
       "org": "Coursera · Michigan State University",
       "desc": "Online certification covering game design fundamentals and Unity development, resulting in three shipped prototype projects."
     },
     {
-      "year": "2019 – 2023",
+      "year": "2023 – 2024",
       "role": "Selected University Exams",
       "org": "University of Milan · Milan, Italy",
-      "desc": "Sat three standalone exams out of personal interest rather than a full degree programme (see CV for details) — including the Online Game Design course that led to Athena."
+      "desc": "Sat three standalone exams at the University of Milan out of personal interest: AI for Video Games, 3D Video Games, and Online Game Design — the last of which led to Athena."
     }
   ],
-
   "aboutSkillBars": [
-    { "name": "Game Design",       "pct": 90  },
-    { "name": "QA Testing",        "pct": 95  },
-    { "name": "Project Management","pct": 80  },
-    { "name": "Unity / C#",        "pct": 70  },
-    { "name": "Level Design",      "pct": 75  },
-    { "name": "Team Leadership",   "pct": 85  }
+    {
+      "name": "Game Design",
+      "pct": 90
+    },
+    {
+      "name": "QA Testing",
+      "pct": 95
+    },
+    {
+      "name": "Project Management",
+      "pct": 80
+    },
+    {
+      "name": "Unity / C#",
+      "pct": 70
+    },
+    {
+      "name": "Level Design",
+      "pct": 75
+    },
+    {
+      "name": "Team Leadership",
+      "pct": 85
+    }
   ],
-
   "aboutTools": [
-    "Unity","Jira","Zephyr","TestRail","C#","Git / GitHub",
-    "Miro","Figma","Google Docs","Notion","Perforce","Discord"
+    "Unity",
+    "Jira",
+    "Zephyr",
+    "TestRail",
+    "C#",
+    "Git / GitHub",
+    "Miro",
+    "Figma",
+    "Google Docs",
+    "Notion",
+    "Perforce",
+    "Discord"
   ],
-
   "aboutLanguages": [
-    { "name": "Italian", "label": "NATIVE", "pct": 100 },
-    { "name": "English", "label": "C1",     "pct": 85  }
+    {
+      "name": "Italian",
+      "label": "NATIVE",
+      "pct": 100
+    },
+    {
+      "name": "English",
+      "label": "C1",
+      "pct": 85
+    }
   ],
-
   "contacts": [
     {
       "icon": "📧",
