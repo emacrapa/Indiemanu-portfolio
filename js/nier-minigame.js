@@ -80,7 +80,9 @@
     '.nav-links a',
     'button:not(.hamburger):not(.carousel-arrow):not(.lightbox-close)',
     '.cv-year','.cv-role','.cv-org',
+    '.cv-item-year','.cv-item-role','.cv-item-org',
     '.contact-card-label','.contact-card-value',
+    '.contact-card-platform','.contact-card-handle','.contact-card-desc','.contact-card-arrow',
     '.skill-bar-label span:first-child',
     '.footer-links a',
     '.about-name',
@@ -90,7 +92,7 @@
   const BLOCK_SEL = [
     '.project-card','.project-list-item',
     '.stat-box','.contact-card',
-    '.cv-item','.cv-entry',
+    '.cv-item','.cv-entry','.cv-item-desc',
     '.about-card','.meta-box',
     '.skill-bar-item',
     'p',
@@ -138,6 +140,14 @@
     return false;
   }
 
+  // Original text color of the source element — carried onto the
+  // enemy/block so it still "feels like" the bit of UI it detached
+  // from, instead of every entity looking identically gold/white.
+  function srcColorOf(el){
+    const c=getComputedStyle(el).color;
+    return c&&c!=='rgba(0, 0, 0, 0)'?c:null;
+  }
+
   function makeEnemy(el,tier){
     if(!el||!elVisible(el)||shouldSkip(el)) return null;
     const r=el.getBoundingClientRect();
@@ -148,6 +158,7 @@
       : Math.max(3,Math.min(8, Math.ceil(label.length/6)));
     return{
       el,tier,label,
+      srcColor:srcColorOf(el),
       x:-999,y:-999,
       w:Math.max(r.width,40),h:Math.max(r.height,18),
       hp,maxHp:hp,vx:0,vy:0,
@@ -163,11 +174,11 @@
     if(!el||seenEls.has(el)||!elVisible(el)||shouldSkip(el)) return null;
     const r=el.getBoundingClientRect();
     if(r.width<20||r.height<10) return null;
-    if(r.width>W*0.85&&r.height>H*0.6) return null;
     seenEls.add(el);
     const label=getLabel(el);
     return{
       el,label,
+      srcColor:srcColorOf(el),
       x:r.left,y:r.top,w:r.width,h:r.height,
       hp:Math.max(1,Math.floor((r.width*r.height)/12000)),
       dead:false,flashTimer:0,
@@ -195,13 +206,16 @@
     addEnemies(BOSS_SEL,'boss');
     addEnemies(MINI_SEL,'mini');
 
-    // Blocks — skip anything that is or contains an enemy el
-    const enemyElSet=new Set(seenEls);
+    // Blocks — skip anything that is or contains an enemy el at ANY
+    // depth (e.g. a .project-card's title/role/category live two
+    // levels down, inside .project-card-body) — otherwise the same
+    // text would show up twice: once as a free-flying enemy, once
+    // baked into the truncated label of its own static "husk" block.
+    const enemyElList=[...seenEls];
     BLOCK_SEL.forEach(sel=>{
       document.querySelectorAll(sel).forEach(el=>{
         if(seenEls.has(el)) return;
-        // Skip if a direct child is already an enemy
-        if([...el.children].some(c=>enemyElSet.has(c))) return;
+        if(enemyElList.some(en=>el.contains(en))) return;
         const bl=makeBlock(el,seenEls);
         if(bl) blocks.push(bl);
       });
@@ -480,16 +494,17 @@
     for(const bl of blocks){
       if(bl.dead)continue;
       const fl=bl.flashTimer>0;
+      const idleCol=bl.srcColor||'rgba(232,232,216,0.28)';
       ctx.save();
       ctx.fillStyle='rgba(0,0,0,0.3)';ctx.globalAlpha=fl?0.7:0.18;
       ctx.fillRect(bl.x,bl.y,bl.w,bl.h);
-      ctx.strokeStyle=fl?'#ffffff':'rgba(232,232,216,0.28)';ctx.lineWidth=fl?1.5:0.5;
+      ctx.strokeStyle=fl?'#ffffff':idleCol;ctx.lineWidth=fl?1.5:0.5;
       ctx.globalAlpha=fl?0.85:0.22;ctx.strokeRect(bl.x,bl.y,bl.w,bl.h);
       if(bl.label&&bl.w>40&&bl.h>14){
         const fs=Math.min(8,Math.max(5,Math.floor(bl.h*0.35)));
         const font=`${fs}px "Press Start 2P",monospace`;
         const lbl=fitLabel(bl.label.toUpperCase(),bl.w-10,font);
-        ctx.font=font;ctx.fillStyle=C.white;ctx.globalAlpha=fl?0.5:0.14;
+        ctx.font=font;ctx.fillStyle=fl?'#ffffff':idleCol;ctx.globalAlpha=fl?0.5:0.14;
         ctx.textAlign='center';ctx.textBaseline='middle';
         ctx.fillText(lbl,bl.x+bl.w/2,bl.y+bl.h/2);
       }
@@ -505,7 +520,8 @@
       }
       if(!e.active)continue;
       const hpR=e.hp/e.maxHp;
-      const col=hpR>0.6?C.gold:hpR>0.3?'#e89050':C.accent;
+      const healthyCol=e.srcColor||C.gold;
+      const col=hpR>0.6?healthyCol:hpR>0.3?'#e89050':C.accent;
       const isBoss=e.tier==='boss';
       ctx.save();
 

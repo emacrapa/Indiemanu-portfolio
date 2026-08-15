@@ -30,7 +30,7 @@ for (const project of data.projects) {
     }
 
     const images = fs.readdirSync(folder)
-        .filter(file => file.toLowerCase().endsWith(".png"))
+        .filter(file => /\.(png|jpe?g|webp)$/i.test(file))
         .sort(naturalSort)
         .map(file => `${project.galleryFolder}/${file}`);
 

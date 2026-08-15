@@ -1478,7 +1478,18 @@ footer {
   .about-avatar-box { margin: 0 auto; }
   .carousel-arrow.prev { left: 4px; }
   .carousel-arrow.next { right: 4px; }
-  .project-card { flex: 0 0 calc(85vw); }
+}
+
+/* Carousel card tiers — MUST mirror the visibleCount breakpoints
+   (700px / 1100px) in js/main.js (getVisibleCount), otherwise the
+   number of cloned slides won't match what's on screen and the
+   infinite-loop wrap glitches. */
+@media (max-width: 1099px) {
+  .project-card { flex: 0 0 calc(50% - 0.75rem); min-width: 240px; }
+}
+
+@media (max-width: 699px) {
+  .project-card { flex: 0 0 85vw; min-width: 0; }
 }
 
 @media (max-width: 600px) {

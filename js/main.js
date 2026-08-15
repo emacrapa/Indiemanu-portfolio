@@ -26,6 +26,7 @@ async function init() {
   initToast();
   initMinigame();
   initScrollEffects();
+  initResizeHandling();
   router();
   window.addEventListener('hashchange', router);
 }
@@ -67,18 +68,22 @@ function router() {
     document.querySelector('[href="#home"]')?.classList.add('active');
     renderHome();
   } else if (hash === '#projects') {
+    stopCarouselAuto();
     showPage('page-projects-list');
     document.querySelector('[href="#projects"]')?.classList.add('active');
     renderProjectsList();
   } else if (hash === '#about') {
+    stopCarouselAuto();
     showPage('page-about');
     document.querySelector('[href="#about"]')?.classList.add('active');
     renderAbout();
   } else if (hash === '#contact') {
+    stopCarouselAuto();
     showPage('page-contact');
     document.querySelector('[href="#contact"]')?.classList.add('active');
     renderContact();
   } else if (hash.startsWith('#project/')) {
+    stopCarouselAuto();
     const slug = hash.replace('#project/', '');
     showPage('page-project');
     renderProject(slug);
@@ -118,6 +123,24 @@ function renderHeroParticles() {
 }
 
 // ── Carousel ──
+// Tiers below MUST match the CSS breakpoints for .project-card
+// (see @media rules in style.css) — otherwise the number of cloned
+// slides won't match what's actually visible and the infinite loop
+// glitches on wrap/resize.
+function getVisibleCount() {
+    return window.innerWidth < 700 ? 1 :
+        window.innerWidth < 1100 ? 2 : 3;
+}
+
+// Reads the real flex `gap` from a track instead of hardcoding it,
+// so carousel/gallery math stays correct if the CSS gap ever changes.
+function getTrackGap(track, fallbackPx) {
+    const g = parseFloat(getComputedStyle(track).columnGap);
+    return Number.isNaN(g) ? fallbackPx : g;
+}
+
+let lastCarouselVisibleCount = null;
+
 function renderCarousel() {
 
     const track = document.getElementById("carousel-track");
@@ -125,9 +148,8 @@ function renderCarousel() {
 
     if (!track) return;
 
-    const visibleCount =
-        window.innerWidth < 700 ? 1 :
-        window.innerWidth < 1100 ? 2 : 3;
+    const visibleCount = getVisibleCount();
+    lastCarouselVisibleCount = visibleCount;
 
     const cards = PROJECTS.map(p => `
         <div class="project-card" onclick="navigate('project/${p.slug}')" role="button" tabindex="0">
@@ -159,7 +181,6 @@ function renderCarousel() {
     `);
 
     track.innerHTML =
-        track.innerHTML =
     cards.slice(-visibleCount)
         .map(c => c.replace(
             'project-card"',
@@ -183,7 +204,7 @@ function renderCarousel() {
         const firstCard = track.querySelector(".project-card");
         if (!firstCard) return;
 
-        const cardW = firstCard.offsetWidth + 24;
+        const cardW = firstCard.offsetWidth + getTrackGap(track, 24);
 
         track.style.transition = "none";
         track.style.transform =
@@ -240,6 +261,74 @@ function stopCarouselAuto() {
 
 }
 
+// Repositions the track at the current index without rebuilding the
+// clones — used on window resize when the visible-card tier hasn't
+// changed, so the (fluid, %-based) card width and the fixed px
+// transform don't drift out of sync mid-drag.
+function realignCarousel() {
+
+    const track = document.getElementById("carousel-track");
+    const card = track?.querySelector(".project-card");
+
+    if (!track || !card) return;
+
+    const cardW = card.offsetWidth + getTrackGap(track, 24);
+
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${carouselIndex * cardW}px)`;
+    void track.offsetHeight;
+
+    requestAnimationFrame(() => {
+        track.style.transition = "transform .45s ease";
+    });
+
+}
+
+function realignGallery() {
+
+    const track = document.getElementById("gallery-track");
+    const item = track?.querySelector(".gallery-item-wrapper");
+
+    if (!track || !item) return;
+
+    const itemWidth = item.offsetWidth + getTrackGap(track, 16);
+
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${galleryIndex * itemWidth}px)`;
+    void track.offsetHeight;
+
+    requestAnimationFrame(() => {
+        track.style.transition = "transform .45s ease";
+    });
+
+}
+
+let resizeDebounceTimer = null;
+function initResizeHandling() {
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(handleResize, 150);
+    });
+}
+
+function handleResize() {
+    const hash = window.location.hash || '#home';
+
+    if (hash === '#home' || hash === '') {
+        const track = document.getElementById('carousel-track');
+        if (!track || !track.children.length) return;
+        // Tier changed (e.g. mobile <-> tablet <-> desktop) — the clone
+        // count depends on visibleCount, so a full rebuild is required.
+        if (getVisibleCount() !== lastCarouselVisibleCount) {
+            renderCarousel();
+        } else {
+            realignCarousel();
+        }
+    } else if (hash.startsWith('#project/')) {
+        realignGallery();
+    }
+}
+
 function moveCarousel(dir, userInteraction = true) {
 
     if (userInteraction)
@@ -250,13 +339,11 @@ function moveCarousel(dir, userInteraction = true) {
 
     if (!cards.length) return;
 
-    const visibleCount =
-        window.innerWidth < 700 ? 1 :
-        window.innerWidth < 1100 ? 2 : 3;
+    const visibleCount = getVisibleCount();
 
     const realCount = PROJECTS.length;
 
-    const cardW = cards[0].offsetWidth + 24;
+    const cardW = cards[0].offsetWidth + getTrackGap(track, 24);
 
     carouselIndex += dir;
 
@@ -298,16 +385,14 @@ function moveCarousel(dir, userInteraction = true) {
 
 function goToSlide(index) {
 
-    const visibleCount =
-        window.innerWidth < 700 ? 1 :
-        window.innerWidth < 1100 ? 2 : 3;
+    const visibleCount = getVisibleCount();
 
     carouselIndex = index + visibleCount;
 
     const track = document.getElementById("carousel-track");
     const card = track.querySelector(".project-card");
 
-    const cardW = card.offsetWidth + 24;
+    const cardW = card.offsetWidth + getTrackGap(track, 24);
 
     track.style.transition = "transform .45s ease";
     track.style.transform =
@@ -321,9 +406,7 @@ function goToSlide(index) {
 
 function updateCarouselDots() {
 
-    const visibleCount =
-        window.innerWidth < 700 ? 1 :
-        window.innerWidth < 1100 ? 2 : 3;
+    const visibleCount = getVisibleCount();
 
     let active =
         (carouselIndex - visibleCount) % PROJECTS.length;
@@ -1126,14 +1209,6 @@ function openMinigame() {
 
 function closeMinigame() {
   if (typeof stopNierBattle === 'function') stopNierBattle(true);
-}
-
-// =========================================
-// KONAMI HINT on contact page
-// =========================================
-function initKonamiHint() {
-  const el = document.getElementById('konami-hint');
-  if (el) el.textContent = '↑ ↑ ↓ ↓ ← → ← → B A';
 }
 
 // =========================================
