@@ -64,21 +64,25 @@ function router() {
   resetTheme();
   
   if (hash === '#home' || hash === '') {
+    stopGalleryAuto();
     showPage('page-home');
     document.querySelector('.nav-links [href="#home"]')?.classList.add('active');
     renderHome();
   } else if (hash === '#projects') {
     stopCarouselAuto();
+    stopGalleryAuto();
     showPage('page-projects-list');
     document.querySelector('[href="#projects"]')?.classList.add('active');
     renderProjectsList();
   } else if (hash === '#about') {
     stopCarouselAuto();
+    stopGalleryAuto();
     showPage('page-about');
     document.querySelector('[href="#about"]')?.classList.add('active');
     renderAbout();
   } else if (hash === '#contact') {
     stopCarouselAuto();
+    stopGalleryAuto();
     showPage('page-contact');
     document.querySelector('[href="#contact"]')?.classList.add('active');
     renderContact();
@@ -716,6 +720,8 @@ function renderGallery(images = []) {
 
     if (!track) return;
 
+    stopGalleryAuto();
+
     galleryIndex = 0;
     lightboxImages = images;
 
@@ -788,6 +794,7 @@ function renderGallery(images = []) {
         track.style.transform =
             `translateX(-${galleryIndex * itemWidth}px)`;
 
+        updateGalleryProgress();
 
         requestAnimationFrame(() => {
 
@@ -799,9 +806,51 @@ function renderGallery(images = []) {
 
     });
 
+    startGalleryAuto();
+
 }
 
-function moveGallery(dir) {
+// ── Gallery autoplay (mirrors the home carousel's pattern) ──
+let galleryTimer = null;
+const GALLERY_DELAY = 4500;
+
+function startGalleryAuto() {
+    clearInterval(galleryTimer);
+    // Nothing meaningful to cycle if everything already fits in view.
+    if (lightboxImages.length <= 2) return;
+    galleryTimer = setInterval(() => moveGallery(1, false), GALLERY_DELAY);
+}
+
+function stopGalleryAuto() {
+    clearInterval(galleryTimer);
+}
+
+function restartGalleryAuto() {
+    stopGalleryAuto();
+    startGalleryAuto();
+}
+
+// Maps the (clone-offset) galleryIndex back onto the real image set and
+// sizes/positions the scroll-position bar under the gallery controls.
+function updateGalleryProgress() {
+    const thumb = document.getElementById('gallery-progress-thumb');
+    const realCount = lightboxImages.length;
+    if (!thumb || !realCount) return;
+
+    const visibleItems = 2;
+    let logical = (galleryIndex - visibleItems) % realCount;
+    if (logical < 0) logical += realCount;
+
+    const widthPct = Math.min(100, (visibleItems / realCount) * 100);
+    const leftPct = Math.min((logical / realCount) * 100, 100 - widthPct);
+
+    thumb.style.width = widthPct + '%';
+    thumb.style.left = leftPct + '%';
+}
+
+function moveGallery(dir, userInteraction = true) {
+
+    if (userInteraction) restartGalleryAuto();
 
     const track = document.getElementById("gallery-track");
     const items = track?.querySelectorAll(".gallery-item-wrapper");
@@ -818,6 +867,8 @@ function moveGallery(dir) {
     track.style.transition = "transform .45s ease";
     track.style.transform =
         `translateX(-${galleryIndex * itemWidth}px)`;
+
+    updateGalleryProgress();
 
     track.ontransitionend = () => {
 
@@ -842,6 +893,8 @@ function moveGallery(dir) {
                 `translateX(-${galleryIndex * itemWidth}px)`;
 
         }
+
+        updateGalleryProgress();
 
     };
 

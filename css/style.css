@@ -966,6 +966,22 @@ body::after {
 }
 .gallery-btn:hover { border-color: var(--accent); color: var(--accent); }
 
+/* Scroll-position indicator — shows the current viewport as a fraction
+   of the full (real, non-cloned) image set, like a mini scrollbar. */
+.gallery-progress {
+  margin-top: 0.75rem;
+  height: 3px;
+  background: var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.gallery-progress-thumb {
+  position: absolute;
+  top: 0; left: 0; height: 100%;
+  background: var(--accent);
+  transition: left 0.45s ease, width 0.45s ease;
+}
+
 /* Sidebar */
 .project-sidebar {
   position: sticky;
