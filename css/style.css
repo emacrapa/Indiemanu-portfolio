@@ -52,7 +52,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-/* ── Scan-line overlay ── */
+/* ── Scan-line overlay ──
+   Decorative CRT texture on the flat background — must stay BEHIND
+   all real content (text, images, cards, lightbox...), not on top of
+   it, or it darkens everything it covers. */
 body::before {
   content: '';
   position: fixed;
@@ -65,7 +68,7 @@ body::before {
     rgba(0,0,0,0.04) 4px
   );
   pointer-events: none;
-  z-index: 9999;
+  z-index: -2;
 }
 
 /* ── Noise texture ── */
@@ -75,7 +78,7 @@ body::after {
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
   pointer-events: none;
-  z-index: 9998;
+  z-index: -1;
   opacity: 0.4;
 }
 
