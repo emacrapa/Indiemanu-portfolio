@@ -807,6 +807,7 @@ function renderGallery(images = []) {
     });
 
     startGalleryAuto();
+    initGalleryProgressDrag();
 
 }
 
@@ -828,6 +829,75 @@ function stopGalleryAuto() {
 function restartGalleryAuto() {
     stopGalleryAuto();
     startGalleryAuto();
+}
+
+// ── Gallery progress bar: drag-to-scrub ──
+// Bound once (guarded by dataset.dragBound) since #gallery-progress-track
+// is static markup that persists across renderGallery() re-renders —
+// only the inner #gallery-track content gets rebuilt per project.
+function initGalleryProgressDrag() {
+    const bar = document.getElementById('gallery-progress-track');
+    const thumb = document.getElementById('gallery-progress-thumb');
+    if (!bar || !thumb || bar.dataset.dragBound) return;
+    bar.dataset.dragBound = '1';
+
+    const visibleItems = 2;
+    let dragging = false;
+
+    function logicalFromClientX(clientX) {
+        const realCount = lightboxImages.length;
+        if (!realCount) return 0;
+        const rect = bar.getBoundingClientRect();
+        const widthFrac = Math.min(1, visibleItems / realCount);
+        const maxLeftFrac = 1 - widthFrac;
+        // Center the handle under the pointer rather than its left edge.
+        let frac = (clientX - rect.left) / rect.width - widthFrac / 2;
+        frac = Math.max(0, Math.min(maxLeftFrac, frac));
+        const logical = maxLeftFrac > 0
+            ? Math.round((frac / maxLeftFrac) * (realCount - 1))
+            : 0;
+        return Math.max(0, Math.min(realCount - 1, logical));
+    }
+
+    function applyDrag(clientX) {
+        const gTrack = document.getElementById('gallery-track');
+        const item = gTrack?.querySelector('.gallery-item-wrapper');
+        if (!gTrack || !item) return;
+
+        galleryIndex = visibleItems + logicalFromClientX(clientX);
+
+        const itemWidth = item.offsetWidth + 16;
+        gTrack.style.transition = 'none';
+        gTrack.style.transform = `translateX(-${galleryIndex * itemWidth}px)`;
+        thumb.style.transition = 'none';
+        updateGalleryProgress();
+    }
+
+    function start(clientX) {
+        if (lightboxImages.length <= visibleItems) return;
+        dragging = true;
+        stopGalleryAuto();
+        applyDrag(clientX);
+    }
+    function move(clientX) {
+        if (dragging) applyDrag(clientX);
+    }
+    function end() {
+        if (!dragging) return;
+        dragging = false;
+        thumb.style.transition = '';
+        const gTrack = document.getElementById('gallery-track');
+        if (gTrack) gTrack.style.transition = 'transform .45s ease';
+        restartGalleryAuto();
+    }
+
+    bar.addEventListener('mousedown', e => { start(e.clientX); e.preventDefault(); });
+    window.addEventListener('mousemove', e => move(e.clientX));
+    window.addEventListener('mouseup', end);
+
+    bar.addEventListener('touchstart', e => start(e.touches[0].clientX), { passive: true });
+    window.addEventListener('touchmove', e => { if (dragging) move(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchend', end);
 }
 
 // Maps the (clone-offset) galleryIndex back onto the real image set and

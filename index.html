@@ -107,7 +107,7 @@
       <div class="about-mini-text">
         <h2>I make games.<br><span>I break games.</span><br>Sometimes both.</h2>
         <p>Hi! I'm Emanuele — a Game Designer turned QA Tester with a passion for crafting experiences that stick. With over 3 years in the industry, I've shipped AAA motorcycle titles at Milestone, led indie teams from jam to release, and studied the craft at Event Horizon School.</p>
-        <p>I believe good games come from obsessing over details, communicating clearly, and being willing to scrap your own darlings. Whether I'm writing a GDD at 2am or filing a P1 bug at crunch, I'm always chasing the same thing: a game worth playing.</p>
+        <p>I believe good games come from obsessing over details, communicating clearly, and being willing to scrap your own darlings. Whether I'm drafting a GDD or filing a P1 bug, I'm always chasing the same thing: a game worth playing.</p>
 
         <div class="about-mini-stats">
           <div class="stat-box">
@@ -255,7 +255,11 @@
                 <button class="gallery-btn" onclick="moveGallery(-1)">◀ PREV</button>
                 <button class="gallery-btn" onclick="moveGallery(1)">NEXT ▶</button>
               </div>
-              <div class="gallery-progress" aria-hidden="true"><div class="gallery-progress-thumb" id="gallery-progress-thumb"></div></div>
+              <div class="gallery-progress" id="gallery-progress-track" aria-hidden="true">
+                <div class="gallery-progress-thumb" id="gallery-progress-thumb">
+                  <div class="gallery-progress-handle"></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -308,8 +312,7 @@
        ║          ABOUT PAGE             ║
        ╚══════════════════════════════════╝ -->
   <div id="page-about" class="page">
-    <div id="page-about-inner">
-      <div id="page-about">
+    <div id="page-about-content">
 
         <!-- Header -->
         <div class="about-header">
@@ -366,7 +369,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
 
     <footer>
@@ -389,8 +391,7 @@
        ║         CONTACT PAGE            ║
        ╚══════════════════════════════════╝ -->
   <div id="page-contact" class="page">
-    <div id="page-contact-inner">
-      <div id="page-contact">
+    <div id="page-contact-content">
 
         <div class="contact-header">
           <h1>// LET'S <span>CONNECT</span></h1>
@@ -413,7 +414,6 @@
           </div>
         </div>
 
-      </div>
     </div>
 
     <footer>

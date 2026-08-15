@@ -828,7 +828,7 @@ body::after {
 /* =========================================
    PROJECT ARTICLE PAGE
    ========================================= */
-#page-project {
+#page-project-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem 6rem;
@@ -967,13 +967,15 @@ body::after {
 .gallery-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Scroll-position indicator — shows the current viewport as a fraction
-   of the full (real, non-cloned) image set, like a mini scrollbar. */
+   of the full (real, non-cloned) image set, like a mini scrollbar.
+   Draggable: grab anywhere on the track to scrub through the gallery. */
 .gallery-progress {
   margin-top: 0.75rem;
   height: 3px;
   background: var(--border);
   position: relative;
-  overflow: hidden;
+  cursor: pointer;
+  touch-action: none;
 }
 .gallery-progress-thumb {
   position: absolute;
@@ -981,6 +983,17 @@ body::after {
   background: var(--accent);
   transition: left 0.45s ease, width 0.45s ease;
 }
+.gallery-progress-handle {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 12px; height: 12px;
+  background: var(--accent);
+  border: 2px solid var(--bg2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+}
+.gallery-progress-handle:active { cursor: grabbing; }
 
 /* Sidebar */
 .project-sidebar {
@@ -1157,7 +1170,7 @@ body::after {
 /* =========================================
    ABOUT PAGE
    ========================================= */
-#page-about {
+#page-about-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem 6rem;
@@ -1321,7 +1334,7 @@ body::after {
 /* =========================================
    CONTACT PAGE
    ========================================= */
-#page-contact {
+#page-contact-content {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem 6rem;

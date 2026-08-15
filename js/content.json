@@ -122,9 +122,9 @@
       "platform": "DISCORD",
       "handle": "_scrappyy",
       "desc": "For quick chats and game dev talk",
-      "arrow": "click to copy →",
-      "copyValue": "_scrappyy",
-      "copyToast": "// DISCORD TAG COPIED!"
+      "href": "https://discord.com/users/479350489268486145",
+      "arrow": "→",
+      "external": true
     },
     {
       "icon": "💰",
