@@ -89,6 +89,18 @@ function router() {
     renderProject(slug);
   }
   window.scrollTo(0, 0);
+  trackPageview(hash);
+}
+
+// ── Analytics (GoatCounter, privacy-friendly, no cookies) ──
+// Reports each hash-based virtual page as its own pageview, since GoatCounter's
+// auto-tracking (disabled via no_onload) only sees a single static "/" otherwise.
+function trackPageview(hash) {
+  if (typeof window.goatcounter === 'undefined' || !window.goatcounter.count) return;
+  window.goatcounter.count({
+    path: hash || '#home',
+    title: document.title,
+  });
 }
 
 function showPage(id) {
