@@ -186,13 +186,8 @@
       "longDescription": "Narciso's Dream was the first GameLab project at Event Horizon School — a two-week sprint with no fixed theme, giving our 17-person team full creative freedom. I took on the dual role of Game Designer and Project Manager, defining the core loop of a Top-Down Arena where the visual aesthetic shifts dynamically between a dreamy, peaceful state and a dark nightmare as the player takes damage. Managing a team of this size under tight deadlines taught me how to balance creative ambition with pragmatic scoping.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
-          "icon": "download"
-        },
-        {
-          "label": "Download Pitch",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "label": "Pitch Deck (PDF)",
+          "url": "files/pitches/Pitch%20Narciso's%20Dream.pdf",
           "icon": "download"
         }
       ],
@@ -233,13 +228,8 @@
       "longDescription": "Working on my first professional title at Milestone S.r.l. was a pivotal experience. I joined the QA team for this project and was responsible for executing test plans, logging and tracking bugs through the pipeline, and verifying fixes. The project completed certification and launched internationally, marking my entry into the professional games industry.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
-          "icon": "download"
-        },
-        {
-          "label": "Download Pitch",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "label": "Pitch Deck (PDF)",
+          "url": "files/pitches/Pitch%20DwarfKeeper.pdf",
           "icon": "download"
         }
       ],
@@ -287,13 +277,8 @@
       "longDescription": "Karen Jaeger was built for a four-week Game Jam at Event Horizon School around the theme \"You're the Villain\". As Game Designer and Project Manager for a 15-person team, I helped shape a Beat 'em Up where the player takes on the role of a chaos-causing \"Karen\", smashing through a highly destructible retail setting, clashing with managers and police, and fighting all the way up to the supreme manager. It was a fun exercise in embracing an unlikeable protagonist and building satisfying, destructible combat encounters.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
-          "icon": "download"
-        },
-        {
-          "label": "Download Pitch",
-          "url": "https://drive.google.com/uc?export=download&id=1Kxxl1g9bsftAB3MahVf_p9ucJ8sX4Xdq",
+          "label": "Pitch Deck (PDF)",
+          "url": "files/pitches/Pitch%20Karen%20Jaeger.pdf",
           "icon": "download"
         }
       ],
@@ -378,13 +363,7 @@
       ],
       "description": "This remake of Hover was the first team project done at Event Horizon School during January 2024. The remake is a faithful reproduction of the famous 1995 game, in a revamped graphic design. Capture all the blue flags before the enemies manage to capture the red ones!",
       "longDescription": "The Hover Remake was my team's first project at Event Horizon School — a faithful reimagining of the classic 1995 Windows game, rebuilt in Unity with a fresh visual identity. Over three weeks with an 18-member team, I coordinated game design decisions and production flow, ensuring we preserved what made the original charming while modernising the look and feel. This project laid the foundation for how I approach team leadership in game development.",
-      "links": [
-        {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1B7jhREmzQqDypbWKxoM6xGjzRn5i45iv",
-          "icon": "download"
-        }
-      ],
+      "links": [],
       "color": "#0a84e8",
       "galleryFolder": "files/images/gallery/hover-2024",
       "gallery": [
@@ -507,11 +486,6 @@
       "longDescription": "48 hours, 7 people, one theme: \"Roots\". Seedious Sam XD: The Last Farmer is the chaotic local 1v1 party game that came out of Global Game Jam 2023 in Milan. As Game Designer and Team Lead, I pitched the concept, delegated tasks, and kept the team focused through an intense weekend of development. The result: a frenetic plant-based battle game where two players weaponise genetically modified crops in a last-farmer-standing showdown.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=14rN8yp8Zarhhx8BmLh2pe6bNYbYBddXE",
-          "icon": "download"
-        },
-        {
           "label": "itch.io Page",
           "url": "https://liberiarcano.itch.io/seedious-sam-xd-the-last-farmer",
           "icon": "itch"
@@ -627,11 +601,6 @@
       "longDescription": "Totally Inaccurate Solar System Simulator was my first solo Unity project, built as part of Michigan State University's Game Design and Development Specialization on Coursera. It's a lightweight orbital sandbox: left-click any celestial body to lock the camera onto it (try catching the Moon, Pluto or a comet), right-click to snap back to the Sun. Every planet, plus the Moon, Pluto and some comets, orbits with deliberately inaccurate scale, distance and speed. This project was my first hands-on introduction to Unity's workflow.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Gm7BRJHnxvytJxHiXuBH9_joVUZjAFcT",
-          "icon": "download"
-        },
-        {
           "label": "itch.io Page",
           "url": "https://indiemanu.itch.io/totally-inaccurate-solar-system-simulator",
           "icon": "itch"
@@ -673,11 +642,6 @@
       "description": "PROXIMA The Last Stand is a 5-chapter 2D action shooter built solo during Michigan State University's Game Design and Development Specialization on Coursera. Take command as a colony defender and protect the human settlement of Proxima from wave after wave of alien attacks.",
       "longDescription": "PROXIMA The Last Stand was my second solo Unity project made during Michigan State University's Game Design and Development Specialization on Coursera. Across 5+1 levels linked by a main story — including one complex level split into sub-levels — I designed and built a top-down action shooter where the player commands the defense of the human colony of Proxima against escalating alien assaults. I implemented a minimap, new enemy types, and environmental challenges, handling level design, scripting, and UI entirely on my own.",
       "links": [
-        {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Gm7BRJHnxvytJxHiXuBH9_joVUZjAFcT",
-          "icon": "download"
-        },
         {
           "label": "itch.io Page",
           "url": "https://indiemanu.itch.io/proxima-the-last-stand",
@@ -729,11 +693,6 @@
       "longDescription": "Tales of Ekrund was my first solo Unity project, built as part of Michigan State University's Game Design and Development Specialization on Coursera. Over two weeks, I designed and built a 3-level 2D platformer completely from scratch — handling level design, scripting, and UI. The game follows an explorer delving into Ekrund, a dwarven ruin shrouded in mystery. This project was my real introduction to Unity's workflow and the challenges of solo game development.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1Gm7BRJHnxvytJxHiXuBH9_joVUZjAFcT",
-          "icon": "download"
-        },
-        {
           "label": "itch.io Page",
           "url": "https://indiemanu.itch.io/tales-of-ekrund",
           "icon": "itch"
@@ -781,8 +740,8 @@
       "longDescription": "Athena was developed during the Online Game Design course at the University of Milan, themed around the institution's centenary. Ten of us built an online co-op puzzle platformer where three players select different ability classes and collaborate to defeat Athena — an AI villain who has seized control of the university. The project was a deep dive into multiplayer architecture in Unity and the design challenges of building mechanics that require genuine cooperation.",
       "links": [
         {
-          "label": "Download Build",
-          "url": "https://drive.google.com/uc?export=download&id=1e4iPAeZei9PQYY4BgkMDieROjdmv6hDI",
+          "label": "Pitch Deck (PDF)",
+          "url": "files/pitches/Pitch%20ATHENA.pdf",
           "icon": "download"
         }
       ],
